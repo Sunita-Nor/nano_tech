@@ -38,7 +38,6 @@ $(document).ready(function() {
         var pt_id = $('#pt_id').val();
         var pt_name = $('#pt_name').val();
 
-
         if (pt_name !== '') {
             $.ajax({
                 url: "addType.php",
@@ -83,6 +82,7 @@ $(document).ready(function() {
             type: 'red',
             typeAnimated: true,
             buttons: {
+                close: function() {},
                 tryAgain: {
                     text: 'Assent',
                     btnClass: 'btn-red',
@@ -100,8 +100,7 @@ $(document).ready(function() {
                             return false;
                         }
                     }
-                },
-                close: function() {}
+                }
             }
         });
     });
