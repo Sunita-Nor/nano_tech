@@ -46,12 +46,25 @@ $(document).ready(function() {
                 contentType: false,
                 processData: false,
                 success: function(data) {
-                    $('#myForm')[0].reset();
                     $('#addRowModal').modal('hide');
-                    dataTable.ajax.reload();
+                    $.alert({
+                        icon: 'fas fa-check-circle',
+                        title: 'Successfully',
+                        content: 'The new product category has been successfully added to the system.',
+                        type: 'green',
+                        autoClose: 'okay|5000',
+                        buttons: {
+                            okay: function() {
+                                $('#myForm')[0].reset();
+                                dataTable.ajax.reload();
+                            }
+                        }
+                    });
                 }
             });
         }
+
+
     });
 
     $(document).on('click', '.edit', function() {
