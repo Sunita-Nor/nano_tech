@@ -112,26 +112,35 @@
                   <h4 class="card-title"> Add Product</h4>
                 </div>
               </div>
-              <div class="modal-content my-2">
-                <p class="small mx-4">Create a new row using this form, make sure you fill them all</p>
+              <div class="modal-content ">
                 <div class="modal-body">
                   <form action="" method="post" id="form">
+
+                    <p class="small">Create a new row using this form, make sure you fill them all.</p>
                     <div class="row">
                       <div class="col-sm-12">
                         <div class="form-group form-group-default">
                           <label style="font-size: 20px;">Name</label>
-                          <input type="text" class="form-control" id="" placeholder="fill name">
+                          <input type="text" class="form-control" id="" placeholder="Fill Name">
                         </div>
                       </div>
+
+                      <?php 
+                      require_once 'includes/database.php';
+                      $select_type = $pdo->prepare("SELECT * FROM product_type");
+                      $select_type->execute();
+                      ?>
+
                       <div class="col-sm-12">
                         <div class="form-group form-group-default">
                           <label>Category</label>
                           <select class="form-control" id="">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
+                            <option>-- Select Product Categor --</option>
+                            <?php 
+                            while($row = $select_type->fetch(PDO::FETCH_ASSOC)){
+                              ?>
+                            <option value="<?php echo $row['pt_id']?>"><?php echo $row['pt_name']?></option>
+                            <?php }?>
                           </select>
                         </div>
                       </div>
@@ -139,20 +148,20 @@
                       <div class="col-md-6 pr-0">
                         <div class="form-group form-group-default">
                           <label>Price</label>
-                          <input type="text" class="form-control" id="" placeholder="fill price">
+                          <input type="text" class="form-control" id="" placeholder="Fill Price">
                         </div>
                       </div>
                       <div class="col-md-6">
                         <div class="form-group form-group-default">
                           <label>Certification</label>
-                          <input type="text" class="form-control" id="" placeholder="fill certification">
+                          <input type="text" class="form-control" id="" placeholder="Fill Certification">
                         </div>
                       </div>
 
                       <div class="col-md-6 pr-0">
                         <div class="form-group form-group-default">
                           <label>Material</label>
-                          <input type="text" class="form-control" id="" placeholder="fill material">
+                          <input type="text" class="form-control" id="" placeholder="Fill Material">
                         </div>
                       </div>
                       <div class="col-md-6">
@@ -208,14 +217,14 @@
                       <div class="col-sm-12">
                         <div class="form-group form-group-default">
                           <label style="font-size: 20px;">Size</label>
-                          <input type="text" class="form-control" id="" placeholder="fill size">
+                          <input type="text" class="form-control" id="" placeholder="Fill Size">
                         </div>
                       </div>
 
                       <div class="col-sm-12">
                         <div class="form-group form-group-default">
                           <label>Detail</label>
-                          <textarea class="form-control" rows="2" id="" placeholder="fill detail"></textarea>
+                          <textarea class="form-control" rows="2" id="" placeholder="Fill Detail"></textarea>
                         </div>
                       </div>
 

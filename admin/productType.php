@@ -153,7 +153,7 @@
                               <div class="form-group form-group-default">
                                 <label>Name</label>
                                 <input type="text" id="pt_name" name="pt_name" class="form-control"
-                                  placeholder="fill name">
+                                  placeholder="Fill name">
                               </div>
                             </div>
                           </div>
