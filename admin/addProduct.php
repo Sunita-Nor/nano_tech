@@ -109,7 +109,7 @@
             <div class="card">
               <div class="card-header">
                 <div class="d-flex align-items-center">
-                  <h4 class="card-title"> Add Product</h4>
+                  <h4 class="card-title">Add Product</h4>
                 </div>
               </div>
               <div class="modal-content ">
@@ -168,6 +168,13 @@
                         <div class="form-group mx-2">
                           <label>Color</label>
                           <div class="row gutters-xs">
+                            <div class="col-auto">
+                              <label class="colorinput">
+                                <input name="color" type="checkbox" value="white" class="colorinput-input">
+                                <span class="colorinput-color bg-white"></span>
+                              </label>
+                            </div>
+
                             <div class="col-auto">
                               <label class="colorinput">
                                 <input name="color" type="checkbox" value="dark" class="colorinput-input">

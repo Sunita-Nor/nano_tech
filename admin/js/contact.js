@@ -52,7 +52,7 @@ $(document).ready(function() {
                         title: 'Successfully',
                         content: 'The new product category has been successfully added to the system.',
                         type: 'green',
-                        autoClose: 'okay|5000',
+                        autoClose: 'okay|3000',
                         buttons: {
                             okay: function() {
                                 $('#myForm')[0].reset();
