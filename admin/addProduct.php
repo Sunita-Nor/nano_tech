@@ -170,13 +170,6 @@
                           <div class="row gutters-xs">
                             <div class="col-auto">
                               <label class="colorinput">
-                                <input name="color" type="checkbox" value="white" class="colorinput-input">
-                                <span class="colorinput-color bg-white"></span>
-                              </label>
-                            </div>
-
-                            <div class="col-auto">
-                              <label class="colorinput">
                                 <input name="color" type="checkbox" value="dark" class="colorinput-input">
                                 <span class="colorinput-color bg-dark"></span>
                               </label>
@@ -217,6 +210,21 @@
                                 <span class="colorinput-color bg-warning"></span>
                               </label>
                             </div>
+
+                            <div class="col-auto">
+                              <label class="colorinput">
+                                <input name="color" type="checkbox" value="pink" class="colorinput-input">
+                                <span class="colorinput-color bg-pink"></span>
+                              </label>
+                            </div>
+
+                            <div class="col-auto">
+                              <label class="colorinput">
+                                <input name="color" type="checkbox" value="darkRed" class="colorinput-input">
+                                <span class="colorinput-color bg-darkRed"></span>
+                              </label>
+                            </div>
+
                           </div>
                         </div>
                       </div>

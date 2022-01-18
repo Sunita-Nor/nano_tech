@@ -7855,6 +7855,20 @@ label.error {
     color: #ffffff !important;
 }
 
+.btn-pink {
+    background: pink !important;
+    border-color: pink !important;
+    color: #ffffff !important;
+}
+
+.btn-warning:hover,
+.btn-warning:focus,
+.btn-warning:disabled {
+    background: pink !important;
+    border-color: pink !important;
+    color: #ffffff !important;
+}
+
 .btn-warning:hover,
 .btn-warning:focus,
 .btn-warning:disabled {
@@ -8031,6 +8045,14 @@ label.error {
 
 .btn-link.btn-warning:hover {
     color: #FFAD46 !important;
+}
+
+.btn-pink.btn-pink {
+    color: pink !important;
+}
+
+.btn-pink.btn-pink:hover {
+    color: pink !important;
 }
 
 .btn-link.btn-danger {
@@ -9217,6 +9239,7 @@ label.error {
 .btn-success.is-loading:after,
 .card-success.is-loading:after,
 .btn-warning.is-loading:after,
+.btn-pink.is-loading:after,
 .card-warning.is-loading:after,
 .btn-danger.is-loading:after,
 .card-danger.is-loading:after,
@@ -9248,6 +9271,7 @@ label.error {
 .btn-success.is-loading:after,
 .card-success.is-loading:after,
 .btn-warning.is-loading:after,
+.btn-pink.is-loading:after,
 .card-warning.is-loading:after,
 .btn-danger.is-loading:after,
 .card-danger.is-loading:after {
@@ -14550,6 +14574,14 @@ body[data-background-color="dark"] .board {
 
 .bg-warning {
     background-color: #FFAD46 !important;
+}
+
+.bg-pink {
+    background-color: pink !important;
+}
+
+.bg-darkRed {
+    background-color: #8B0000 !important;
 }
 
 .bg-warning2 {

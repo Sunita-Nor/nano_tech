@@ -7419,6 +7419,12 @@ label.error {
     color: #fff!important
 }
 
+.btn-pink {
+    background: pink !important;
+    border-color: pink !important;
+    color: #fff!important
+}
+
 .btn-warning:disabled,
 .btn-warning:focus,
 .btn-warning:hover {
@@ -14025,6 +14031,10 @@ body[data-background-color=dark] .board {
 
 .bg-warning2 {
     background-color: #ff9e27!important
+}
+
+.bg-pink {
+    background-color: pink !important
 }
 
 .bg-danger {

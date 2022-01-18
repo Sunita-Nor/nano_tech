@@ -2620,6 +2620,12 @@ fieldset:disabled a.btn {
     border-color: #ffc107
 }
 
+.btn-pink {
+    color: #212529;
+    background-color: pink;
+    border-color: pink;
+}
+
 .btn-warning:hover {
     color: #212529;
     background-color: #e0a800;

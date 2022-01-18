@@ -11,6 +11,7 @@ function image_select() {
             })
         } else {
             $.confirm({
+                icon: 'fas fa-exclamation-triangle',
                 title: image[i].name,
                 content: 'is already added to the list',
                 type: 'orange',
@@ -20,11 +21,9 @@ function image_select() {
                         text: 'Try again',
                         btnClass: 'btn-orange',
                         action: function() {}
-                    },
-                    close: function() {}
+                    }
                 }
             });
-            // alert(image[i].name + "is already added to the list");
         }
     }
     document.getElementById('form').reset();
@@ -58,6 +57,29 @@ function check_duplicate(name) {
                 image = false;
                 break;
             }
+        }
+    }
+
+    if (images.length > 4) {
+        for (e = 0; e < images.length; e--) {
+            if (images[e].name == name) {
+                image = false;
+                break;
+            }
+            $.confirm({
+                icon: 'fas fa-times-circle',
+                title: 'Only 5 files ',
+                content: 'Only 5 files are allowed to upload.',
+                type: 'red',
+                typeAnimated: true,
+                buttons: {
+                    tryAgain: {
+                        text: 'Ok',
+                        btnClass: 'btn-red',
+                        action: function() {}
+                    }
+                }
+            });
         }
     }
     return image;
