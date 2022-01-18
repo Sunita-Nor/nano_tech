@@ -1,6 +1,11 @@
 <!-- Header start-->
 <?php include"layouts/head.php"?>
 <!-- Header start-->
+
+<script>
+
+</script>
+
 <div class="wrapper">
   <div class="main-header">
     <!-- Logo Header -->
@@ -47,17 +52,17 @@
             </a>
             <div class="collapse show" id="base">
               <ul class="nav nav-collapse">
-                <li>
+                <li class="">
                   <a href="productType.php">
                     <span class="sub-item">Product Category</span>
                   </a>
                 </li>
-                <li>
+                <li class="active">
                   <a href="modelNumber.php">
                     <span class="sub-item">Model Number</span>
                   </a>
                 </li>
-                <li class="active">
+                <li>
                   <a href="product.php">
                     <span class="sub-item">Products Listing</span>
                   </a>
@@ -65,27 +70,6 @@
               </ul>
             </div>
           </li>
-          <!-- <li class="nav-item">
-            <a data-toggle="collapse" href="#sidebarLayouts">
-              <i class="fas fa-th-list"></i>
-              <p>Sidebar Layouts</p>
-              <span class="caret"></span>
-            </a>
-            <div class="collapse" id="sidebarLayouts">
-              <ul class="nav nav-collapse">
-                <li>
-                  <a href="../sidebar-style-1.html">
-                    <span class="sub-item">Sidebar Style 1</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="../overlay-sidebar.html">
-                    <span class="sub-item">Overlay Sidebar</span>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </li> -->
         </ul>
       </div>
     </div>
@@ -114,7 +98,7 @@
               <i class="flaticon-right-arrow"></i>
             </li>
             <li class="nav-item">
-              <a href="#">Product Listing</a>
+              <a href="#">Mode Number</a>
             </li>
           </ul>
         </div>
@@ -124,124 +108,127 @@
             <div class="card">
               <div class="card-header">
                 <div class="d-flex align-items-center">
-                  <h4 class="card-title">Product Listing</h4>
-                  <button class="btn btn-round ml-auto" onclick="document.location='addProduct.php'">
+                  <h4 class="card-title">Model Number</h4>
+                  <button class="btn btn-round ml-auto" data-toggle="modal" data-target="#addRowModal" id="addType">
                     <i style="font-size: 12px;" class="fa fa-plus"></i>
-                    Add Product
+                    Add Model Number
                   </button>
                 </div>
               </div>
-              <!-- Table -->
               <div class="card-body">
+                <!-- Modal -->
+                <div class="modal fade" id="addRowModal" tabindex="-1" role="dialog" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header no-bd">
+                        <h5 class="modal-title">
+                          <span class="fw-mediumbold">Add</span>
+                          <span class="fw-light">Model Number</span>
+                        </h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <p class="small">Create a new row using this form, make sure you fill them all</p>
+                        <form method="POST" enctype="multipart/form-data" id="myForm" name="myForm">
+                          <div class="row">
+                            <?php 
+                              require_once 'includes/database.php';
+                              $select_type = $pdo->prepare("SELECT * FROM product_type");
+                              $select_type->execute();
+                            ?>
+                            <div class="col-sm-12">
+                              <div class="form-group form-group-default">
+                                <label>Category</label>
+                                <select class="form-control" id="">
+                                  <option>-- Select Product Categor --</option>
+                                  <?php 
+                                    while($row = $select_type->fetch(PDO::FETCH_ASSOC)){
+                                  ?>
+                                  <option value="<?php echo $row['pt_id']?>"><?php echo $row['pt_name']?></option>
+                                  <?php }?>
+                                </select>
+                              </div>
+                            </div>
+
+                            <div class="col-sm-12">
+                              <div class="form-group form-group-default">
+                                <label>Name</label>
+                                <input type="text" id="pt_name" name="pt_name" class="form-control"
+                                  placeholder="Fill name">
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="modal-footer no-bd">
+                            <input type="hidden" name="pt_id" id="pt_id">
+                            <input type="hidden" name="operation" id="operation">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                            <button type="submit" class="btn btn-info" id="action" name="action">Add</button>
+                          </div>
+
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- End Modal -->
+
+                <!-- Table -->
                 <div class="table-responsive">
                   <table id="add-row" class="display table table-striped table-hover">
                     <thead>
                       <tr>
-                        <th style="width: 12%">Name</th>
-                        <th style="width: 11%">Category</th>
-                        <th style="width: 20%">image</th>
-                        <th style="width: 5%">Price</th>
-                        <th style="width: 20%">Detail</th>
-                        <th style="width: 10%">Action</th>
+                        <th>Name</th>
+                        <th scope="col" width="5%">Action</th>
                       </tr>
                     </thead>
                     <tfoot>
                       <tr>
                         <th>Name</th>
-                        <th>Category</th>
-                        <th>image</th>
-                        <th>Price</th>
-                        <th>Detail</th>
-                        <th>Action</th>
+                        <th scope="col" width="5%">Action</th>
                       </tr>
                     </tfoot>
                     <tbody>
-                      <tr>
+                      <!-- <tr>
                         <td>Tiger Nixon</td>
-                        <td>Tiger Nixon</td>
-                        <td>Tiger Nixon</td>
-                        <td>153</td>
-                        <td>Tiger Nixon</td>
-
                         <td>
                           <div class="form-button-action">
-                            <button type="button" data-toggle="tooltip" title="" class="btn btn-link btn-primary btn-lg"
+                            <button type="button" data-toggle="tooltip" class="btn btn-link btn-primary btn-lg"
                               data-original-title="Edit Task">
                               <i class="fa fa-edit"></i>
                             </button>
-                            <button type="button" data-toggle="tooltip" title="" class="btn btn-link btn-danger"
+                            <button type="button" data-toggle="tooltip" class="btn btn-link btn-danger"
                               data-original-title="Remove">
                               <i class="fa fa-times"></i>
                             </button>
                           </div>
                         </td>
-                      </tr>
-
+                      </tr> -->
                     </tbody>
                   </table>
                 </div>
+                <!--End Table -->
               </div>
             </div>
           </div>
         </div>
+
+
       </div>
     </div>
-    <!-- include footer -->
-    <?php include"layouts/footer.php"?>
-    <!-- end include footer -->
-
   </div>
-  <!-- จบ เนื้อหาข้างใน -->
 
+  <script src="js/contact.js"></script>
+
+  <!-- include footer -->
+  <?php include"layouts/footer.php"?>
+  <!-- end include footer -->
+
+</div>
+<!-- จบ เนื้อหาข้างใน -->
 </div>
 <!-- include script -->
 <?php include"layouts/script.php"?>
 <!-- end include script -->
-<script>
-$(document).ready(function() {
-  $('#basic-datatables').DataTable({});
-
-  $('#multi-filter-select').DataTable({
-    "pageLength": 5,
-    initComplete: function() {
-      this.api().columns().every(function() {
-        var column = this;
-        var select = $('<select class="form-control"><option value=""></option></select>')
-          .appendTo($(column.footer()).empty())
-          .on('change', function() {
-            var val = $.fn.dataTable.util.escapeRegex(
-              $(this).val()
-            );
-
-            column
-              .search(val ? '^' + val + '$' : '', true, false)
-              .draw();
-          });
-
-        column.data().unique().sort().each(function(d, j) {
-          select.append('<option value="' + d + '">' + d + '</option>')
-        });
-      });
-    }
-  });
-
-  // Add Row
-  $('#add-row').DataTable({
-    "pageLength": 5,
-  });
-
-  var action =
-    '<td> <div class="form-button-action"> <button type="button" data-toggle="tooltip" title="" class="btn btn-link btn-primary btn-lg" data-original-title="Edit Task"> <i class="fa fa-edit"></i> </button> <button type="button" data-toggle="tooltip" title="" class="btn btn-link btn-danger" data-original-title="Remove"> <i class="fa fa-times"></i> </button> </div> </td>';
-
-  $('#addRowButton').click(function() {
-    $('#add-row').dataTable().fnAddData([
-      $("#addName").val(),
-      $("#addPosition").val(),
-      $("#addOffice").val(),
-      action
-    ]);
-    $('#addRowModal').modal('hide');
-
-  });
-});
-</script>
