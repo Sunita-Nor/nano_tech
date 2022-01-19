@@ -26,7 +26,7 @@
             <div class="collapse" id="dashboard">
               <ul class="nav nav-collapse">
                 <li>
-                  <a href="admin.php">
+                  <a href="indexAdmin.php">
                     <span class="sub-item">Dashboard 1</span>
                   </a>
                 </li>
