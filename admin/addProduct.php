@@ -164,6 +164,7 @@
                           <input type="text" class="form-control" id="" placeholder="Fill Material">
                         </div>
                       </div>
+
                       <div class="col-md-6">
                         <div class="form-group mx-2">
                           <label>Color</label>
@@ -172,14 +173,14 @@
                             <div class="col-auto">
                               <label class="colorinput">
                                 <input name="color" type="checkbox" value="white" class="colorinput-input">
-                                <span class="colorinput-color bg-white"></span>
+                                <span class="colorinput-color1 bg-white"></span>
                               </label>
                             </div>
 
                             <div class="col-auto">
                               <label class="colorinput">
                                 <input name="color" type="checkbox" value="gainsboro" class="colorinput-input">
-                                <span class="colorinput-color bg-gainsboro"></span>
+                                <span class="colorinput-color1 bg-gainsboro"></span>
                               </label>
                             </div>
 
@@ -251,15 +252,15 @@
 
                       <div class="col-sm-12">
                         <div class="form-group form-group-default">
-                          <label style="font-size: 20px;">Number of products</label>
-                          <input type="text" class="form-control" id="" placeholder="Fill Number of products">
+                          <label>Detail</label>
+                          <textarea class="form-control" rows="5" id="" placeholder="Fill Detail"></textarea>
                         </div>
                       </div>
 
                       <div class="col-sm-12">
                         <div class="form-group form-group-default">
-                          <label>Detail</label>
-                          <textarea class="form-control" rows="2" id="" placeholder="Fill Detail"></textarea>
+                          <label style="font-size: 20px;">Number of products</label>
+                          <input type="text" class="form-control" id="" placeholder="Fill Number of products">
                         </div>
                       </div>
 
