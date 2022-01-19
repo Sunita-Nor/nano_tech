@@ -2,6 +2,10 @@
 <?php include"layouts/head.php"?>
 <!-- Header start-->
 
+<script>
+
+</script>
+
 <div class="wrapper">
   <div class="main-header">
     <!-- Logo Header -->
@@ -115,8 +119,8 @@
               </div>
               <div class="modal-content ">
                 <div class="modal-body">
-                  <form action="" method="post" id="form" name="form">
-
+                  <form action="" method="post" id="addForm" name="form">
+                    <label for="color" id="color_error"></label>
                     <p class="small">Create a new row using this form, make sure you fill them all.</p>
                     <div class="row">
                       <div class="col-sm-12">
@@ -131,16 +135,16 @@
                       $select_type = $pdo->prepare("SELECT * FROM product_type");
                       $select_type->execute();
                       ?>
-
                       <div class="col-sm-12">
                         <div class="form-group form-group-default">
                           <label>Category</label>
-                          <select class="form-control" id="">
-                            <option>-- Select Product Categor --</option>
+                          <select class="form-control" id="pt_id" name="pt_id">
+                            <option value="">-- Select Product Category --</option>
                             <?php 
                             while($row = $select_type->fetch(PDO::FETCH_ASSOC)){
                               ?>
-                            <option value="<?php echo $row['pt_id']?>"><?php echo $row['pt_name']?></option>
+                            <option value="<?php echo $row['pt_id']?>"><?php echo $row['pt_name']?>
+                            </option>
                             <?php }?>
                           </select>
                         </div>
@@ -149,112 +153,127 @@
                       <div class="col-md-6 pr-0">
                         <div class="form-group form-group-default">
                           <label>Price</label>
-                          <input type="text" class="form-control" id="" placeholder="Fill Price">
+                          <input type="number" class="form-control" id="pm_price" name="pm_price"
+                            placeholder="Fill Price">
                         </div>
                       </div>
+
                       <div class="col-md-6">
                         <div class="form-group form-group-default">
                           <label>Certification</label>
-                          <input type="text" class="form-control" id="" placeholder="Fill Certification">
+                          <input type="text" class="form-control" id="pm_certification" name="pm_certification"
+                            placeholder="Fill Certification">
                         </div>
                       </div>
 
                       <div class="col-md-6 pr-0">
                         <div class="form-group form-group-default">
                           <label>Material</label>
-                          <input type="text" class="form-control" id="" placeholder="Fill Material">
+                          <input type="text" class="form-control" id="" name="pm_material" placeholder="Fill Material">
                         </div>
                       </div>
 
                       <div class="col-md-6">
-                        <div class="form-group mx-2">
-                          <label>Color</label>
+                        <div class="form-group">
+                          <label class="mx-1">Color</label>
                           <div class="row gutters-xs">
 
                             <div class="col-auto">
                               <label class="colorinput">
-                                <input name="color" type="checkbox" value="white" class="colorinput-input">
+                                <input type="checkbox" value="white" class="form-control colorinput-input"
+                                  name="pd_color[]">
                                 <span class="colorinput-color1 bg-white"></span>
                               </label>
                             </div>
 
                             <div class="col-auto">
                               <label class="colorinput">
-                                <input name="color" type="checkbox" value="gainsboro" class="colorinput-input">
+                                <input type="checkbox" value="gainsboro" class="form-control colorinput-input"
+                                  name="pd_color[]">
                                 <span class="colorinput-color1 bg-gainsboro"></span>
                               </label>
                             </div>
 
                             <div class="col-auto">
                               <label class="colorinput">
-                                <input name="color" type="checkbox" value="dark" class="colorinput-input">
+                                <input type="checkbox" value="dark" class="form-control colorinput-input"
+                                  name="pd_color[]">
                                 <span class="colorinput-color bg-dark"></span>
                               </label>
                             </div>
 
                             <div class="col-auto">
                               <label class="colorinput">
-                                <input name="color" type="checkbox" value="danger" class="colorinput-input">
+                                <input type="checkbox" value="danger" class="form-control colorinput-input"
+                                  name="pd_color[]">
                                 <span class="colorinput-color bg-danger"></span>
                               </label>
                             </div>
 
                             <div class="col-auto">
                               <label class="colorinput">
-                                <input name="color" type="checkbox" value="orange" class="colorinput-input">
+                                <input type="checkbox" value="orange" class="form-control colorinput-input"
+                                  name="pd_color[]">
                                 <span class="colorinput-color bg-orange"></span>
                               </label>
                             </div>
 
                             <div class="col-auto">
                               <label class="colorinput">
-                                <input name="color" type="checkbox" value="paleGoldenrod" class="colorinput-input">
+                                <input type="checkbox" value="paleGoldenrod" class="form-control colorinput-input"
+                                  name="pd_color[]">
                                 <span class="colorinput-color bg-paleGoldenrod"></span>
                               </label>
                             </div>
 
                             <div class="col-auto">
                               <label class="colorinput">
-                                <input name="color" type="checkbox" value="green" class="colorinput-input">
+                                <input type="checkbox" value="green" class="form-control colorinput-input"
+                                  name="pd_color[]">
                                 <span class="colorinput-color bg-green"></span>
                               </label>
                             </div>
 
                             <div class="col-auto">
                               <label class="colorinput">
-                                <input name="color" type="checkbox" value="deepSkyBlue" class="colorinput-input">
+                                <input type="checkbox" value="deepSkyBlue" class="form-control colorinput-input"
+                                  name="pd_color[]">
                                 <span class="colorinput-color bg-deepSkyBlue"></span>
                               </label>
                             </div>
 
                             <div class="col-auto">
                               <label class="colorinput">
-                                <input name="color" type="checkbox" value="blue" class="colorinput-input">
+                                <input type="checkbox" value="blue" class="form-control colorinput-input"
+                                  name="pd_color[]">
                                 <span class="colorinput-color bg-blue"></span>
                               </label>
                             </div>
 
                             <div class="col-auto">
                               <label class="colorinput">
-                                <input name="color" type="checkbox" value="lightPink" class="colorinput-input">
+                                <input type="checkbox" value="lightPink" class="form-control colorinput-input"
+                                  name="pd_color[]">
                                 <span class="colorinput-color bg-lightPink"></span>
                               </label>
                             </div>
 
                             <div class="col-auto">
                               <label class="colorinput">
-                                <input name="color" type="checkbox" value="hotPink" class="colorinput-input">
+                                <input type="checkbox" value="hotPink" class="form-control colorinput-input"
+                                  name="pd_color[]">
                                 <span class="colorinput-color bg-hotPink"></span>
                               </label>
                             </div>
                           </div>
+                          <div class="mt-0" id="error"></div>
                         </div>
                       </div>
 
                       <div class="col-sm-12">
                         <div class="form-group form-group-default">
                           <label>Detail</label>
-                          <textarea class="form-control" rows="5" id="" placeholder="Fill Detail"></textarea>
+                          <textarea class="form-control" rows="3" id="" placeholder="Fill Detail"></textarea>
                         </div>
                       </div>
 
@@ -286,7 +305,7 @@
 
                     <div class="modal-footer no-bd">
                       <button type="button" class="btn btn-danger">Close</button>
-                      <button type="submit" id="addRowButton" class="btn btn-info">Add</button>
+                      <button type="submit" id="submit" class="btn btn-info">Add</button>
                     </div>
 
                   </form>
@@ -304,28 +323,12 @@
 
   <!-- script upload Image -->
   <script src="js/uploadImage.js"></script>
+  <script src="js/addProduct.js"></script>
   <!-- end script upload Image -->
 
 
 </div>
 <!-- จบ เนื้อหาข้างใน -->
-
-
-<script>
-$(function() {
-  $("form[name='form']").validate({
-    rules: {
-      pm_name: "required"
-    },
-    messages: {
-      pm_name: "Please enter"
-    },
-    submitHandler: function(form) {
-      form.submit();
-    }
-  });
-});
-</script>
 
 </div>
 <!-- include script -->
