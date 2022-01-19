@@ -52,11 +52,6 @@
                     <span class="sub-item">Product Category</span>
                   </a>
                 </li>
-                <li>
-                  <a href="modelNumber.php">
-                    <span class="sub-item">Model Number</span>
-                  </a>
-                </li>
                 <li class="active">
                   <a href="product.php">
                     <span class="sub-item">Products Listing</span>
@@ -173,71 +168,91 @@
                         <div class="form-group mx-2">
                           <label>Color</label>
                           <div class="row gutters-xs">
+
+                            <div class="col-auto">
+                              <label class="colorinput">
+                                <input name="color" type="checkbox" value="white" class="colorinput-input">
+                                <span class="colorinput-color bg-white"></span>
+                              </label>
+                            </div>
+
+                            <div class="col-auto">
+                              <label class="colorinput">
+                                <input name="color" type="checkbox" value="gainsboro" class="colorinput-input">
+                                <span class="colorinput-color bg-gainsboro"></span>
+                              </label>
+                            </div>
+
                             <div class="col-auto">
                               <label class="colorinput">
                                 <input name="color" type="checkbox" value="dark" class="colorinput-input">
                                 <span class="colorinput-color bg-dark"></span>
                               </label>
                             </div>
-                            <div class="col-auto">
-                              <label class="colorinput">
-                                <input name="color" type="checkbox" value="primary" class="colorinput-input">
-                                <span class="colorinput-color bg-primary"></span>
-                              </label>
-                            </div>
-                            <div class="col-auto">
-                              <label class="colorinput">
-                                <input name="color" type="checkbox" value="secondary" class="colorinput-input">
-                                <span class="colorinput-color bg-secondary"></span>
-                              </label>
-                            </div>
-                            <div class="col-auto">
-                              <label class="colorinput">
-                                <input name="color" type="checkbox" value="info" class="colorinput-input">
-                                <span class="colorinput-color bg-info"></span>
-                              </label>
-                            </div>
-                            <div class="col-auto">
-                              <label class="colorinput">
-                                <input name="color" type="checkbox" value="success" class="colorinput-input">
-                                <span class="colorinput-color bg-success"></span>
-                              </label>
-                            </div>
+
                             <div class="col-auto">
                               <label class="colorinput">
                                 <input name="color" type="checkbox" value="danger" class="colorinput-input">
                                 <span class="colorinput-color bg-danger"></span>
                               </label>
                             </div>
+
                             <div class="col-auto">
                               <label class="colorinput">
-                                <input name="color" type="checkbox" value="warning" class="colorinput-input">
-                                <span class="colorinput-color bg-warning"></span>
+                                <input name="color" type="checkbox" value="orange" class="colorinput-input">
+                                <span class="colorinput-color bg-orange"></span>
                               </label>
                             </div>
 
                             <div class="col-auto">
                               <label class="colorinput">
-                                <input name="color" type="checkbox" value="pink" class="colorinput-input">
-                                <span class="colorinput-color bg-pink"></span>
+                                <input name="color" type="checkbox" value="paleGoldenrod" class="colorinput-input">
+                                <span class="colorinput-color bg-paleGoldenrod"></span>
                               </label>
                             </div>
 
                             <div class="col-auto">
                               <label class="colorinput">
-                                <input name="color" type="checkbox" value="darkRed" class="colorinput-input">
-                                <span class="colorinput-color bg-darkRed"></span>
+                                <input name="color" type="checkbox" value="green" class="colorinput-input">
+                                <span class="colorinput-color bg-green"></span>
                               </label>
                             </div>
 
+                            <div class="col-auto">
+                              <label class="colorinput">
+                                <input name="color" type="checkbox" value="deepSkyBlue" class="colorinput-input">
+                                <span class="colorinput-color bg-deepSkyBlue"></span>
+                              </label>
+                            </div>
+
+                            <div class="col-auto">
+                              <label class="colorinput">
+                                <input name="color" type="checkbox" value="blue" class="colorinput-input">
+                                <span class="colorinput-color bg-blue"></span>
+                              </label>
+                            </div>
+
+                            <div class="col-auto">
+                              <label class="colorinput">
+                                <input name="color" type="checkbox" value="lightPink" class="colorinput-input">
+                                <span class="colorinput-color bg-lightPink"></span>
+                              </label>
+                            </div>
+
+                            <div class="col-auto">
+                              <label class="colorinput">
+                                <input name="color" type="checkbox" value="hotPink" class="colorinput-input">
+                                <span class="colorinput-color bg-hotPink"></span>
+                              </label>
+                            </div>
                           </div>
                         </div>
                       </div>
 
                       <div class="col-sm-12">
                         <div class="form-group form-group-default">
-                          <label style="font-size: 20px;">Size</label>
-                          <input type="text" class="form-control" id="" placeholder="Fill Size">
+                          <label style="font-size: 20px;">Number of products</label>
+                          <input type="text" class="form-control" id="" placeholder="Fill Number of products">
                         </div>
                       </div>
 

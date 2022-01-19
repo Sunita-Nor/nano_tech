@@ -14576,14 +14576,6 @@ body[data-background-color="dark"] .board {
     background-color: #FFAD46 !important;
 }
 
-.bg-pink {
-    background-color: pink !important;
-}
-
-.bg-darkRed {
-    background-color: #8B0000 !important;
-}
-
 .bg-warning2 {
     background-color: #FF9E27 !important;
 }
@@ -14602,6 +14594,50 @@ body[data-background-color="dark"] .board {
 
 .bg-grey2 {
     background: #f1f1f1;
+}
+
+.bg-pink {
+    background-color: pink !important;
+}
+
+.bg-white {
+    background-color: #F5F5F5 !important;
+}
+
+.bg-gainsboro {
+    background-color: #DCDCDC !important;
+}
+
+.bg-orange {
+    background-color: #FF8126 !important;
+}
+
+.bg-gold {
+    background-color: #FFD700 !important;
+}
+
+.bg-paleGoldenrod {
+    background-color: #EEE8AA !important;
+}
+
+.bg-green {
+    background-color: #8fcc14 !important;
+}
+
+.bg-deepSkyBlue {
+    background-color: #00BFFF !important;
+}
+
+.bg-blue {
+    background-color: #0000CD !important;
+}
+
+.bg-lightPink {
+    background-color: #FFB6C1 !important;
+}
+
+.bg-hotPink {
+    background-color: #FF69B4 !important;
 }
 
 .bg-dark-gradient {

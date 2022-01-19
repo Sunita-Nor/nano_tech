@@ -2,10 +2,6 @@
 <?php include"layouts/head.php"?>
 <!-- Header start-->
 
-<script>
-
-</script>
-
 <div class="wrapper">
   <div class="main-header">
     <!-- Logo Header -->
@@ -55,11 +51,6 @@
                 <li class="active">
                   <a href="productType.php">
                     <span class="sub-item">Product Category</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="modelNumber.php">
-                    <span class="sub-item">Model Number</span>
                   </a>
                 </li>
                 <li>

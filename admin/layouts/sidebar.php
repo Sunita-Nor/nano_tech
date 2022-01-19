@@ -72,11 +72,6 @@
                 </a>
               </li>
               <li>
-                <a href="modelNumber.php">
-                  <span class="sub-item">Model Number</span>
-                </a>
-              </li>
-              <li>
                 <a href="product.php">
                   <span class="sub-item">Products Listing</span>
                 </a>
