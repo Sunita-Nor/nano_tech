@@ -1,6 +1,7 @@
 <!-- Header start-->
 <?php include"layouts/head.php"?>
 <!-- Header start-->
+
 <div class="wrapper">
   <div class="main-header">
     <!-- Logo Header -->
@@ -26,7 +27,7 @@
             <div class="collapse" id="dashboard">
               <ul class="nav nav-collapse">
                 <li>
-                  <a href="admin.php">
+                  <a href="indexAdmin.php">
                     <span class="sub-item">Dashboard 1</span>
                   </a>
                 </li>
@@ -114,14 +115,14 @@
               </div>
               <div class="modal-content ">
                 <div class="modal-body">
-                  <form action="" method="post" id="form">
+                  <form action="" method="post" id="form" name="form">
 
                     <p class="small">Create a new row using this form, make sure you fill them all.</p>
                     <div class="row">
                       <div class="col-sm-12">
                         <div class="form-group form-group-default">
                           <label style="font-size: 20px;">Name</label>
-                          <input type="text" class="form-control" id="" placeholder="Fill Name">
+                          <input type="text" class="form-control" id="pm_name" name="pm_name" placeholder="Fill Name">
                         </div>
                       </div>
 
@@ -308,6 +309,23 @@
 
 </div>
 <!-- จบ เนื้อหาข้างใน -->
+
+
+<script>
+$(function() {
+  $("form[name='form']").validate({
+    rules: {
+      pm_name: "required"
+    },
+    messages: {
+      pm_name: "Please enter"
+    },
+    submitHandler: function(form) {
+      form.submit();
+    }
+  });
+});
+</script>
 
 </div>
 <!-- include script -->

@@ -119,34 +119,26 @@
                     data: { formData: JSON.stringify(formData) },
                     cache: false,
                     success: function(response) {
-                            console.log(response);
-                            if (response === "True") {
-                                $.alert({
-                                    icon: 'fas fa-check-circle',
-                                    title: 'Succeed',
-                                    content: 'Completed membership application',
-                                    type: 'green',
-                                    typeAnimated: true,
-                                    buttons: {
-                                        tryAgain: {
-                                            text: 'THANK YOU!',
-                                            btnClass: 'btn-green',
-                                            action: function() {
-                                                window.location.href = 'http://localhost/nano_tech/signin.php';
-                                            }
+                        console.log(response);
+                        if (response === "True") {
+                            $.alert({
+                                icon: 'fas fa-check-circle',
+                                title: 'Succeed',
+                                content: 'Completed membership application',
+                                type: 'green',
+                                typeAnimated: true,
+                                buttons: {
+                                    tryAgain: {
+                                        text: 'THANK YOU!',
+                                        btnClass: 'btn-green',
+                                        action: function() {
+                                            window.location.href = 'http://localhost/nano_tech/signin.php';
                                         }
                                     }
-                                });
-                            }
+                                }
+                            });
                         }
-                        // error: function(err) {
-                        //     if (err) {
-                        //         $.alert({
-                        //             title: 'asdasd!',
-                        //             content: 'Simple alert!',
-                        //         });
-                        //     }
-                        // }
+                    }
                 });
             } else {
                 $.confirm({

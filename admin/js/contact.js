@@ -22,23 +22,16 @@ $(document).ready(function() {
         }, ],
     });
 
-    $(document).on('submit', '#myForm', function(event) {
-        event.preventDefault();
-        let formData = new FormData(this);
+    $('#myForm').validate({
+        rules: {
+            pt_name: "required"
+        },
+        messages: {
+            pt_name: "Please enter a category name."
+        },
+        submitHandler: function(form) {
+            let formData = new FormData(form);
 
-        $('#myForm').validate({
-            rules: {
-                pt_name: "required"
-            },
-            messages: {
-                pt_name: "Please enter a category name."
-            },
-        });
-
-        var pt_id = $('#pt_id').val();
-        var pt_name = $('#pt_name').val();
-
-        if (pt_name !== '') {
             $.ajax({
                 url: "addType.php",
                 method: "POST",
@@ -63,9 +56,8 @@ $(document).ready(function() {
                 }
             });
         }
-
-
     });
+
 
     $(document).on('click', '.edit', function() {
         var pt_id = $(this).attr("id");
