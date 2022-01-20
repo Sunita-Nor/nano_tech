@@ -4,7 +4,7 @@
     <div class="mobilemenu__header">
       <div class="mobilemenu__title">Menu</div>
       <button type="button" class="mobilemenu__close">
-        <svg width="20px" height="20px">
+        <svg width="15px" height="15px">
           <use xlink:href="images/sprite.svg#cross-20"></use>
         </svg>
       </button>

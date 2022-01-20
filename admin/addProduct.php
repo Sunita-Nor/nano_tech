@@ -281,14 +281,15 @@
                       <div class="col-sm-12">
                         <div class="form-group form-group-default">
                           <label style="font-size: 20px;">Number of products</label>
-                          <input type="text" class="form-control" id="" placeholder="Fill Number of products">
+                          <input type="text" class="form-control" id="" name="pd_number"
+                            placeholder="Fill Number of products">
                         </div>
                       </div>
 
                       <div class="col-sm-12 ">
                         <div class="form-group form-group-default">
                           <label style="font-size: 20px;">Image Uploading</label>
-                          <input class="file-upload" type="file" name="Image" id="image" multiple=""
+                          <input class="file-upload" type="file" name="Image[]" id="image" multiple=""
                             onchange="image_select()">
 
                           <div class="drag-text my-3">

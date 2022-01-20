@@ -4492,7 +4492,7 @@ screen and (-ms-high-contrast:active) {
 
 .mobile-links__item-toggle {
     border: none;
-    border-left: 1px solid #ebebeb;
+    /* border-left: 1px solid #ebebeb; */
     background: transparent;
     padding: 0;
     width: 54px;
@@ -4633,7 +4633,7 @@ screen and (-ms-high-contrast:active) {
 
 .mobilemenu__close {
     border: none;
-    border-left: 1px solid #ebebeb;
+    /* border-left: 1px solid #ebebeb; */
     background: transparent;
     height: 54px;
     width: 54px;
@@ -10469,7 +10469,7 @@ screen and (-ms-high-contrast:active) {
 }
 
 .widget-filters {
-    border: 2px solid #f0f0f0;
+    /* border: 2px solid #f0f0f0; */
     border-radius: 2px;
     padding: 20px
 }

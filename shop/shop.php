@@ -103,75 +103,6 @@
                     </div>
                   </div>
 
-                  <!-- Menu Price -->
-                  <div class="widget-filters__item">
-                    <div class="filter filter--opened" data-collapse-item>
-                      <button type="button" class="filter__title" data-collapse-trigger>Price
-                        <svg class="filter__arrow" width="12px" height="7px">
-                          <use xlink:href="images/sprite.svg#arrow-rounded-down-12x7"></use>
-                        </svg>
-                      </button>
-                      <div class="filter__body" data-collapse-content>
-                        <div class="filter__container">
-                          <div class="filter-price" data-min="500" data-max="1500" data-from="590" data-to="1130">
-                            <div class="filter-price__slider"></div>
-                            <div class="filter-price__title">Price: ฿
-                              <span class="filter-price__min-value"></span> –
-                              ฿<span class="filter-price__max-value"></span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Menu Price End-->
-
-                  <!-- Menu Check__icon -->
-                  <div class="widget-filters__item">
-                    <div class="filter filter--opened" data-collapse-item>
-                      <button type="button" class="filter__title" data-collapse-trigger>Brand
-                        <svg class="filter__arrow" width="12px" height="7px">
-                          <use xlink:href="images/sprite.svg#arrow-rounded-down-12x7"></use>
-                        </svg>
-                      </button>
-                      <div class="filter__body" data-collapse-content>
-                        <div class="filter__container">
-                          <div class="filter-list">
-                            <div class="filter-list__list">
-                              <label class="filter-list__item">
-                                <span class="filter-list__input input-check">
-                                  <span class="input-check__body">
-                                    <input class="input-check__input" type="checkbox">
-                                    <span class="input-check__box"></span>
-                                    <svg class="input-check__icon" width="9px" height="7px">
-                                      <use xlink:href="images/sprite.svg#check-9x7"></use>
-                                    </svg>
-                                  </span>
-                                </span>
-                                <span class="filter-list__title">Wakita </span>
-                                <span class="filter-list__counter">7</span>
-                              </label>
-                              <label class="filter-list__item">
-                                <span class="filter-list__input input-check">
-                                  <span class="input-check__body">
-                                    <input class="input-check__input" type="checkbox" checked="checked">
-                                    <span class="input-check__box"></span>
-                                    <svg class="input-check__icon" width="9px" height="7px">
-                                      <use xlink:href="images/sprite.svg#check-9x7"></use>
-                                    </svg>
-                                  </span>
-                                </span>
-                                <span class="filter-list__title">Zosch </span>
-                                <span class="filter-list__counter">42</span>
-                              </label>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Menu Check__icon End-->
-
                   <!-- Menu Color -->
                   <div class="widget-filters__item">
                     <div class="filter filter--opened" data-collapse-item>
@@ -370,39 +301,6 @@
                   <button class="btn btn-secondary btn-sm ml-2">Reset</button>
                 </div>
 
-              </div>
-            </div>
-
-            <div class="block-sidebar__item d-none d-lg-block">
-              <div class="widget-products widget">
-                <h4 class="widget__title">Latest Products</h4>
-                <div class="widget-products__list">
-                  <div class="widget-products__item">
-                    <div class="widget-products__image">
-                      <a href="product.html"><img src="images/products/product-1.jpg" alt=""></a>
-                    </div>
-                    <div class="widget-products__info">
-                      <div class="widget-products__name">
-                        <a href="product.html">Electric Planer Brandix KL370090G 300Watts</a>
-                      </div>
-                      <div class="widget-products__prices">$749.00</div>
-                    </div>
-                  </div>
-
-                  <div class="widget-products__item">
-                    <div class="widget-products__image">
-                      <a href="product.html"><img src="images/products/product-4.jpg" alt=""></a>
-                    </div>
-                    <div class="widget-products__info">
-                      <div class="widget-products__name">
-                        <a href="product.html">Drill Series 3 Brandix KSR4590PQS 1500 Watts</a>
-                      </div>
-                      <div class="widget-products__prices"><span class="widget-products__new-price">$949.00</span>
-                        <span class="widget-products__old-price">$1189.00</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
           </div>

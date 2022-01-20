@@ -22,6 +22,12 @@ $(document).ready(function() {
             },
             pm_detail: {
                 required: true
+            },
+            pd_number: {
+                required: true
+            },
+            "Image[]": {
+                required: true
             }
         },
         messages: {
@@ -45,6 +51,12 @@ $(document).ready(function() {
             },
             pm_detail: {
                 required: "Please enter detail."
+            },
+            pd_number: {
+                required: "Please enter number of products."
+            },
+            'Image[]': {
+                required: "Please Choose Your Image to Upload."
             }
         },
         errorPlacement: function(error, element) {
