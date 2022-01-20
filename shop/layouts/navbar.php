@@ -4,7 +4,7 @@
     <div class="site-header__topbar topbar" id="topbar">
       <div class="topbar__container container">
         <div class="topbar__row">
-          <div class="topbar__item topbar__item--link">
+          <!-- <div class="topbar__item topbar__item--link">
             <a class="topbar-link" href="about-us.html">About Us</a>
           </div>
           <div class="topbar__item topbar__item--link">
@@ -12,13 +12,13 @@
           </div>
           <div class="topbar__item topbar__item--link">
             <a class="topbar-link" href="track-order.html">Track Order</a>
-          </div>
+          </div> -->
 
           <div class="topbar__spring"></div>
           <div class="topbar__item">
             <div class="topbar-dropdown">
               <button class="topbar-dropdown__btn" type="button">
-                <img class="avatar" src="images/avatar.png"> &nbsp; Sunita &nbsp;
+                <img class="avatar" src="images/avatar.png"> &nbsp; name &nbsp;
                 <svg width="9px" height="10px">
                   <use xlink:href="images/sprite.svg#arrow-rounded-down-7x5"></use>
                 </svg>
@@ -60,42 +60,22 @@
                   </a>
                 </li>
 
-                <li class="nav-links__item nav-links__item--with-submenu">
+                <li class="nav-links__item">
                   <a href="shop.php">
-                    <span>Shop
-                      <svg class="nav-links__arrow" width="9px" height="6px">
-                        <use xlink:href="images/sprite.svg#arrow-rounded-down-9x6"></use>
-                      </svg>
-                    </span>
+                    <span>Shop</span>
                   </a>
-                  <div class="nav-links__menu">
-                    <!-- .menu -->
+                </li>
+                <!-- <div class="nav-links__menu">
                     <ul class="menu menu--layout--classic">
-                      <li>
-                        <a href="shop.php">Product List
-                          <svg class="menu__arrow" width="6px" height="9px">
-                            <use xlink:href="images/sprite.svg#arrow-rounded-right-6x9"></use>
-                          </svg>
-                        </a>
-                        <div class="menu__submenu">
-                          <!-- .menu -->
-                          <ul class="menu menu--layout--classic">
-                            <li><a href="productDetails.php">Product Details</a></li>
-                          </ul>
-                          <!-- .menu / end -->
-                        </div>
-                      </li>
-
                       <li><a href="cart.php">Cart</a></li>
                       <li><a href="checkout.php">Checkout</a></li>
                       <li><a href="wishlist.php">Wishlist</a></li>
                       <li><a href="track-order.html">Track Order</a></li>
                     </ul>
-                    <!-- .menu / end -->
-                  </div>
-                </li>
+                  </div> -->
 
-                <li class="nav-links__item nav-links__item--with-submenu">
+
+                <!-- <li class="nav-links__item nav-links__item--with-submenu">
                   <a href="blog-classic.html">
                     <span> Blog
                       <svg class="nav-links__arrow" width="9px" height="6px">
@@ -104,14 +84,12 @@
                     </span>
                   </a>
                   <div class="nav-links__menu">
-                    <!-- .menu -->
                     <ul class="menu menu--layout--classic">
                       <li><a href="blog-classic.html">Blog Classic</a></li>
                       <li><a href="blog-grid.html">Blog Grid</a></li>
                     </ul>
-                    <!-- .menu / end -->
                   </div>
-                </li>
+                </li> -->
 
                 <li class="nav-links__item nav-links__item--with-submenu">
                   <a href="#">
@@ -122,13 +100,11 @@
                     </span>
                   </a>
                   <div class="nav-links__menu">
-                    <!-- .menu -->
                     <ul class="menu menu--layout--classic">
                       <li><a href="about-us.html">About Us</a></li>
                       <li><a href="contact-us-alt.html">Contact Us</a></li>
                       <li><a href="faq.html">FAQ</a></li>
                     </ul>
-                    <!-- .menu / end -->
                   </div>
                 </li>
 
@@ -292,7 +268,7 @@
               </div>
 
               <!--แจ้งเตือนการชำระเงิน-->
-              <div class="indicator indicator--trigger--click">
+              <!-- <div class="indicator indicator--trigger--click">
                 <a href="cart.html" class="indicator__button">
                   <span class="indicator__area">
                     <i class="far fa-bell" style="font-size: 20px;"></i>
@@ -300,7 +276,6 @@
                   </span>
                 </a>
                 <div class="indicator__dropdown">
-                  <!-- .dropcart -->
                   <div class="dropcart">
                     <div class="dropcart__products-list">
                       <div class="dropcart__product">
@@ -334,9 +309,8 @@
                       </div>
                     </div>
                   </div>
-                  <!-- .dropcart / end -->
                 </div>
-              </div>
+              </div> -->
             </div>
             <!-- icon END -->
 

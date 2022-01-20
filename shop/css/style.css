@@ -5146,7 +5146,7 @@ screen and (-ms-high-contrast:active) {
     cursor: pointer;
     transition: all .1s;
     background: transparent;
-    color: inherit;
+    /* color: inherit; */
     fill: #bfbfbf
 }
 
