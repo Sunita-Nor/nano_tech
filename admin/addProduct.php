@@ -119,7 +119,7 @@
               </div>
               <div class="modal-content ">
                 <div class="modal-body">
-                  <form action="" method="post" id="addForm" name="form">
+                  <form action="" method="post" id="addForm" name="addForm">
                     <label for="color" id="color_error"></label>
                     <p class="small">Create a new row using this form, make sure you fill them all.</p>
                     <div class="row">
@@ -265,15 +265,16 @@
                                 <span class="colorinput-color bg-hotPink"></span>
                               </label>
                             </div>
+                            <div class="mx-2" id="error"></div>
                           </div>
-                          <div class="mt-0" id="error"></div>
                         </div>
                       </div>
 
                       <div class="col-sm-12">
                         <div class="form-group form-group-default">
                           <label>Detail</label>
-                          <textarea class="form-control" rows="3" id="" placeholder="Fill Detail"></textarea>
+                          <textarea class="form-control" rows="3" id="" name="pm_detail"
+                            placeholder="Fill Detail"></textarea>
                         </div>
                       </div>
 

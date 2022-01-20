@@ -26,7 +26,7 @@ function image_select() {
             });
         }
     }
-    document.getElementById('form').reset();
+    document.getElementById('addForm').reset();
     document.getElementById('container').innerHTML = image_show();
 
 }

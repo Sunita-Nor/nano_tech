@@ -19,6 +19,9 @@ $(document).ready(function() {
             },
             pm_material: {
                 required: true
+            },
+            pm_detail: {
+                required: true
             }
         },
         messages: {
@@ -35,10 +38,13 @@ $(document).ready(function() {
                 required: "Please enter certification."
             },
             'pd_color[]': {
-                required: 'Please select the color of the product.'
+                required: 'Please select the color.'
             },
             pm_material: {
                 required: "Please enter material."
+            },
+            pm_detail: {
+                required: "Please enter detail."
             }
         },
         errorPlacement: function(error, element) {
