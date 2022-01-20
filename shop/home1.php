@@ -30,7 +30,7 @@
             <div class="topbar__spring"></div>
             <div class="topbar__item">
               <div class="topbar-dropdown">
-                <button class="topbar-dropdown__btn" type="button" onclick="document.location='../signin.php'">
+                <button class="topbar-dropdown__btn" type="button" onclick="document.location='../admin/signin.php'">
                   <img class="avatar" src="images/avatar.png"> &nbsp; Sign In &nbsp;
                 </button>
               </div>

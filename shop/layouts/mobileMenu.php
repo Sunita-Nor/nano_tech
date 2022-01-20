@@ -14,96 +14,13 @@
         data-collapse-opened-class="mobile-links__item--open">
         <li class="mobile-links__item" data-collapse-item>
           <div class="mobile-links__item-title">
-            <a href="index.html" class="mobile-links__item-link">Home</a>
-            <button class="mobile-links__item-toggle" type="button" data-collapse-trigger>
-              <svg class="mobile-links__item-arrow" width="12px" height="7px">
-                <use xlink:href="images/sprite.svg#arrow-rounded-down-12x7"></use>
-              </svg>
-            </button>
-          </div>
-          <div class="mobile-links__item-sub-links" data-collapse-content>
-            <ul class="mobile-links mobile-links--level--1">
-              <li class="mobile-links__item" data-collapse-item>
-                <div class="mobile-links__item-title">
-                  <a href="index.html" class="mobile-links__item-link">Home 1</a>
-                </div>
-              </li>
-            </ul>
+            <a href="home1.php" class="mobile-links__item-link">Home</a>
           </div>
         </li>
 
         <li class="mobile-links__item" data-collapse-item>
           <div class="mobile-links__item-title">
-            <a href="shop-grid-3-columns-sidebar.html" class="mobile-links__item-link">Shop</a>
-            <button class="mobile-links__item-toggle" type="button" data-collapse-trigger>
-              <svg class="mobile-links__item-arrow" width="12px" height="7px">
-                <use xlink:href="images/sprite.svg#arrow-rounded-down-12x7"></use>
-              </svg>
-            </button>
-          </div>
-          <div class="mobile-links__item-sub-links" data-collapse-content>
-            <ul class="mobile-links mobile-links--level--1">
-              <li class="mobile-links__item" data-collapse-item>
-                <div class="mobile-links__item-title">
-                  <a href="shop-list.html" class="mobile-links__item-link">Product List</a>
-                </div>
-              </li>
-
-              <li class="mobile-links__item" data-collapse-item>
-                <div class="mobile-links__item-title">
-                  <a href="product.html" class="mobile-links__item-link">Product</a>
-                  <!-- <button class="mobile-links__item-toggle" type="button" data-collapse-trigger>
-                    <svg class="mobile-links__item-arrow" width="12px" height="7px">
-                      <use xlink:href="images/sprite.svg#arrow-rounded-down-12x7"></use>
-                    </svg>
-                  </button> -->
-                </div>
-                <!-- <div class="mobile-links__item-sub-links" data-collapse-content>
-                  <ul class="mobile-links mobile-links--level--2">
-                    <li class="mobile-links__item" data-collapse-item>
-                      <div class="mobile-links__item-title">
-                        <a href="product.html" class="mobile-links__item-link">Product</a>
-                      </div>
-                    </li>
-                    <li class="mobile-links__item" data-collapse-item>
-                      <div class="mobile-links__item-title">
-                        <a href="product-alt.html" class="mobile-links__item-link">Product Alt</a>
-                      </div>
-                    </li>
-                    <li class="mobile-links__item" data-collapse-item>
-                      <div class="mobile-links__item-title">
-                        <a href="product-sidebar.html" class="mobile-links__item-link">Product Sidebar</a>
-                      </div>
-                    </li>
-                  </ul>
-                </div> -->
-              </li>
-              <li class="mobile-links__item" data-collapse-item>
-                <div class="mobile-links__item-title">
-                  <a href="cart.html" class="mobile-links__item-link">Cart</a>
-                </div>
-              </li>
-              <li class="mobile-links__item" data-collapse-item>
-                <div class="mobile-links__item-title">
-                  <a href="checkout.html" class="mobile-links__item-link">Checkout</a>
-                </div>
-              </li>
-              <li class="mobile-links__item" data-collapse-item>
-                <div class="mobile-links__item-title">
-                  <a href="wishlist.html" class="mobile-links__item-link">Wishlist</a>
-                </div>
-              </li>
-              <li class="mobile-links__item" data-collapse-item>
-                <div class="mobile-links__item-title">
-                  <a href="account.html" class="mobile-links__item-link">My Account</a>
-                </div>
-              </li>
-              <li class="mobile-links__item" data-collapse-item>
-                <div class="mobile-links__item-title">
-                  <a href="track-order.html" class="mobile-links__item-link">Track Order</a>
-                </div>
-              </li>
-            </ul>
+            <a href="shop.php" class="mobile-links__item-link">Shop</a>
           </div>
         </li>
 

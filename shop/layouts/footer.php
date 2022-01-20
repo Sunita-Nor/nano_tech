@@ -24,16 +24,16 @@
                <h5 class="footer-links__title">Payment</h5>
                <ul class="footer-links__list">
                  <li class="footer-links__item">
-                   <img src="./images/logos/KS.png" class="footer-links__link" width="160px" height="50%">
+                   <img src="./images/logos/KS.png" class="footer-links__link" width="130px" height="40%">
                  </li>
                  <li class="footer-links__item">
-                   <img src="./images/logos/SCB.png" class="footer-links__link" width="160px" height="50%">
+                   <img src="./images/logos/SCB.png" class="footer-links__link" width="120px" height="40%">
                  </li>
                  <li class="footer-links__item">
-                   <img src="./images/logos/promptpay.png" class="footer-links__link" width="160px" height="50%">
+                   <img src="./images/logos/promptpay.png" class="footer-links__link" width="120px" height="20%">
                  </li>
                  <li class="footer-links__item">
-                   <img src="./images/logos/COD.png" class="footer-links__link" width="160px" height="50%">
+                   <img src="./images/logos/COD.png" class="footer-links__link" width="120px" height="10%">
                  </li>
                </ul>
              </div>
@@ -43,16 +43,16 @@
                <h5 class="footer-links__title">Delivery</h5>
                <ul class="footer-links__list">
                  <li class="footer-links__item">
-                   <img src="./images/logos/f-flash.png" class="footer-links__link my-0" width="180px" height="50%">
+                   <img src="./images/logos/f-flash.png" class="footer-links__link my-0" width="110px" height="20%">
                  </li>
                  <li class="footer-links__item">
-                   <img src="./images/logos/f-kerry.png" class="footer-links__link" width="180px" height="50%">
+                   <img src="./images/logos/f-kerry.png" class="footer-links__link" width="110px" height="20%">
                  </li>
                  <li class="footer-links__item">
-                   <img src="./images/logos/f-J&T.png" class="footer-links__link" width="180px" height="50%">
+                   <img src="./images/logos/f-J&T.png" class="footer-links__link" width="110px" height="20%">
                  </li>
                  <li class="footer-links__item">
-                   <img src="./images/logos/f-thai.png" class="footer-links__link" width="180px" height="50%">
+                   <img src="./images/logos/f-thai.png" class="footer-links__link" width="110px" height="20%">
                  </li>
                </ul>
              </div>
