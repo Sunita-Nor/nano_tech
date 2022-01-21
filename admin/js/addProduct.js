@@ -1,4 +1,8 @@
 $(document).ready(function() {
+    $.validator.addMethod('checkFileLength', function(value, element, param) {
+        let length = images.length;
+        return length > 0;
+    });
 
     $('#addForm').validate({
         rules: {
@@ -26,8 +30,8 @@ $(document).ready(function() {
             pd_number: {
                 required: true
             },
-            "Image[]": {
-                required: true
+            "image[]": {
+                checkFileLength: true
             }
         },
         messages: {
@@ -55,11 +59,26 @@ $(document).ready(function() {
             pd_number: {
                 required: "Please enter number of products."
             },
-            'Image[]': {
-                required: "Please Choose Your Image to Upload."
+            'image[]': {
+                checkFileLength: "Please Choose Your Image to Upload."
             }
         },
+        submitHandler: function(form) {
+            let formData = new FormData(form);
+
+            $.ajax({
+                url: "postAddProduct.php",
+                method: "POST",
+                data: formData,
+                contentType: false,
+                processData: false,
+                success: function(data) {
+                    console.log(data);
+                }
+            });
+        },
         errorPlacement: function(error, element) {
+            console.log(error);
             if (element.is(":checkbox")) {
                 error.appendTo($('#error'));
             } else {

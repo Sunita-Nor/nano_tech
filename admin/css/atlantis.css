@@ -373,7 +373,7 @@ label {
 .account-block1 {
     padding: 0;
     background-image: url(../img/sign-in.png);
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
     background-size: cover;
     background-position: center;
     height: 100%;
@@ -384,12 +384,12 @@ label {
     -webkit-box-flex: 1;
     -ms-flex: 1;
     flex: 1;
-    position: absolute;
+    /* position: absolute; */
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(253, 253, 253, 0.4);
 }
 
 .account-block1 .account-testimonial1 {
@@ -401,17 +401,7 @@ label {
     bottom: 3rem;
     left: 0;
     right: 0;
-}
-
-.account-block1 .account-testimonial1 {
-    text-align: center;
-    color: #fff;
-    position: absolute;
-    margin: 0 auto;
-    padding: 0 1.75rem;
-    bottom: 3rem;
-    left: 0;
-    right: 0;
+    transform: translate(-50%, -50%);
 }
 
 
@@ -434,7 +424,7 @@ label {
     -webkit-box-flex: 1;
     -ms-flex: 1;
     flex: 1;
-    position: absolute;
+    /* position: absolute; */
     top: 0;
     bottom: 0;
     left: 0;

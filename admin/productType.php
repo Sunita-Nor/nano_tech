@@ -160,7 +160,6 @@
                             <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
                             <button type="submit" class="btn btn-info" id="action" name="action">Add</button>
                           </div>
-
                         </form>
                       </div>
                     </div>
