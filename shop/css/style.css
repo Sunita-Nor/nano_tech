@@ -6026,7 +6026,7 @@ screen and (-ms-high-contrast:active) {
 
 @media (min-width:768px) {
     .cart-table__column {
-        padding: 12px 18px;
+        padding: 5px 10px;
         border-top: 1px solid #ebebeb
     }
     .cart-table__column:first-child {
@@ -6068,12 +6068,12 @@ screen and (-ms-high-contrast:active) {
     .cart-table__column--image img {
         width: 80px
     }
-    .cart-table__column--price {
+    /* .cart-table__column--price {
         text-align: right;
         width: 170px
-    }
+    } */
     .cart-table__column--quantity {
-        padding-left: 90px;
+        padding-left: 20px;
         text-align: center;
         width: 1px
     }

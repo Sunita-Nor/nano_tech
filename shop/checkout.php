@@ -37,135 +37,183 @@
         </div>
       </div>
     </div>
-
-    <div class="block faq">
+    <div class="checkout block">
       <div class="container">
-        <div class="faq__section">
-          <div class="faq__section-body">
-            <div class="row my-0">
-              <div class="faq__section-column col-12">
-                <div class="typography">
-                  <h4><i class="fas fa-map-marker-alt"></i> Delivery Address</h4>
-                  <p>
-                    <h7 style="font-family:verdana; color:#A9A9A9;">Name : </h7>
-                    <label for="checkout-postcode">Sunita Norkrueakam</label>
+        <div class="row">
+          <div class="col-12 mb-3">
+            <div class="alert alert-lg alert-primary">Returning customer? <a href="#">Click here to login</a></div>
+          </div>
+          <div class="col-12 col-lg-6 col-xl-7">
+            <div class="card mb-lg-0">
+              <div class="card-body">
+                <h3 class="card-title">Billing details</h3>
+                <form action="">
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label for="checkout-first-name">First Name</label>
+                      <input type="text" class="form-control" id="checkout-first-name" placeholder="First Name">
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label for="checkout-last-name">Last Name</label>
+                      <input type="text" class="form-control" id="checkout-last-name" placeholder="Last Name">
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label for="checkout-first-name">House No.</label>
+                      <input type="text" class="form-control" id="checkout-first-name" placeholder="House No.">
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label for="checkout-last-name">Sub-district</label>
+                      <input type="text" class="form-control" id="checkout-last-name" placeholder="Sub-district">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="checkout-company-name">District</label>
+                    <input type="text" class="form-control" id="checkout-company-name" placeholder="District">
+                  </div>
+                  <div class="form-group">
+                    <label for="checkout-postcode">Postcode / ZIP</label>
+                    <input type="text" class="form-control" id="checkout-postcode">
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label for="checkout-phone">Phone</label>
+                      <input type="text" class="form-control" id="checkout-phone" placeholder="Phone">
+                    </div>
+                  </div>
+                  <!-- <div class="form-group">
+                    <div class="form-check">
+                      <span class="form-check-input input-check">
+                        <span class="input-check__body">
+                          <input class="input-check__input" type="checkbox" id="checkout-create-account">
+                          <span class="input-check__box"></span>
+                          <svg class="input-check__icon" width="9px" height="7px">
+                            <use xlink:href="images/sprite.svg#check-9x7"></use>
+                          </svg>
+                        </span>
+                      </span>
+                      <label class="form-check-label" for="checkout-create-account">Create an account?</label>
+                    </div>
+                  </div> -->
+                  <div class="card-divider"></div>
+                  <div class="payment-methods mt-4">
+                    <h3 class="mt-2">Choose a delivery </h3>
+                    <ul class="payment-methods__list mt-4">
+                      <li>
+                        <label class="payment-methods__item-header">
+                          <span class="payment-methods__item-radio input-radio">
+                            <span class="input-radio__body">
+                              <input class="input-radio__input" name="checkout_payment_method" type="radio"
+                                checked="checked">
+                              <span class="input-radio__circle"></span>
+                            </span>
+                          </span>
+                          <img src="images/logos/flash.png" alt="" width="150px" height="50%"></span>
 
-                    <h7 style="font-family:verdana; color:#A9A9A9;">(+66) </h7>
-                    <label for="checkout-postcode"> 98330 2622</label>
-
-                    &emsp;
-                    <h7 style="font-family:verdana; color:#A9A9A9;">Address : </h7>
-                    <label for="checkout-street-address"> 100/18 หมู่.12 ต.ป่าแดด อ.เมือง จ.เชียงใหม่ 50100 </label>
-
-                    &emsp;&emsp;
-                    <a href="addAddress.php" style="color: #87CEFA;">Change</a>
-                  </p>
-                </div>
+                        </label>
+                        <div class="payment-methods__item-container">
+                          <div class="payment-methods__item-description text-muted">
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <label class="payment-methods__item-header">
+                          <span class="payment-methods__item-radio input-radio">
+                            <span class="input-radio__body">
+                              <input class="input-radio__input" name="checkout_payment_method" type="radio"
+                                checked="checked">
+                              <span class="input-radio__circle"></span>
+                            </span>
+                          </span>
+                          <img src="images/logos/kerry.png" alt="" width="150px" height="50%"></span>
+                        </label>
+                        <div class="payment-methods__item-container">
+                          <div class="payment-methods__item-description text-muted">
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <label class="payment-methods__item-header">
+                          <span class="payment-methods__item-radio input-radio">
+                            <span class="input-radio__body">
+                              <input class="input-radio__input" name="checkout_payment_method" type="radio"
+                                checked="checked">
+                              <span class="input-radio__circle"></span>
+                            </span>
+                          </span>
+                          <img src="images/logos/J&T.png" alt="" width="150px" height="50%"></span>
+                        </label>
+                        <div class="payment-methods__item-container">
+                          <div class="payment-methods__item-description text-muted">
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <label class="payment-methods__item-header">
+                          <span class="payment-methods__item-radio input-radio">
+                            <span class="input-radio__body">
+                              <input class="input-radio__input" name="checkout_payment_method" type="radio"
+                                checked="checked">
+                              <span class="input-radio__circle"></span>
+                            </span>
+                          </span>
+                          <img src="images/logos/thai.png" alt="" width="150px" height="50%">
+                        </label>
+                        <div class="payment-methods__item-container">
+                          <div class="payment-methods__item-description text-muted">
+                            <!-- <p class="my-1 mx-4"><samp>Delivery Charge : </samp>฿ 25</p> -->
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </form>
               </div>
             </div>
           </div>
-        </div>
-
-        <div class="faq__section my-3">
-          <div class="faq__section-body my-1">
-            <div class="row my-0">
-              <div class="faq__section-column col-12">
-                <div class="typography my-0">
-                  <h4 class="card-title">Billing details</h4>
-                  <table class="checkout__totals">
-                    <thead class="checkout__totals-header">
-                      <tr>
-                        <th>Product</th>
-                        <th class="text-center">จำนวน</th>
-                        <th>Total</th>
-                      </tr>
-                    </thead>
-                    <tbody class="checkout__totals-products">
-                      <tr>
-                        <td>Electric Planer Brandix KL370090G 300 Watts</td>
-                        <td class="text-center">1</td>
-                        <td>฿1,398.00</td>
-                      </tr>
-                      <tr>
-                        <td>Undefined Tool IRadix DPS3000SY 2700 watts</td>
-                        <td class="text-center">1</td>
-                        <td>฿849.00</td>
-                      </tr>
-                    </tbody>
-                  </table>
-
-                  <div class="row">
-                    <div class='col-sm-12 col-lg-6 text-center'>
-                      <input type="radio" name="imgbackground" id="img1" class="d-none imgbgchk" value="">
-                      <label for="img1">
-                        <img class="img-fluid" src="images/logos/flash.png" alt="Image 1">
-                        <div class="tick_container">
-                          <div class="tick"><i class="fa fa-check"></i></div>
-                        </div>
-                      </label>
-                    </div>
-
-                    <div class='col-sm-12 col-lg-6 text-center'>
-                      <input type="radio" name="imgbackground" id="img2" class="d-none imgbgchk" value="">
-                      <label for="img2">
-                        <img src="images/logos/kerry.png" alt="Image 2">
-                        <div class="tick_container">
-                          <div class="tick"><i class="fa fa-check"></i></div>
-                        </div>
-                      </label>
-                    </div>
-
-                    <div class='col-sm-12 col-lg-6 text-center'>
-                      <input type="radio" name="imgbackground" id="img3" class="d-none imgbgchk" value="">
-                      <label for="img3">
-                        <img src="images/logos/J&T.png" alt="Image 3">
-                        <div class="tick_container">
-                          <div class="tick"><i class="fa fa-check"></i></div>
-                        </div>
-                      </label>
-                    </div>
-
-                    <div class='col-sm-12 col-lg-6 text-center'>
-                      <input type="radio" name="imgbackground" id="img4" class="d-none imgbgchk" value="">
-                      <label for="img4">
-                        <img src="images/logos/thai.png" alt="Image 4">
-                        <div class="tick_container">
-                          <div class="tick"><i class="fa fa-check"></i></div>
-                        </div>
-                      </label>
-                    </div>
-                  </div>
-
-                  <table class="checkout__totals">
-                    <tbody class="checkout__totals-subtotals">
-                      <tr>
-                        <th>Subtotal</th>
-                        <td>฿2,247.00</td>
-                      </tr>
-                      <tr>
-                        <th>Shipping</th>
-                        <td>฿25.00</td>
-                      </tr>
-                    </tbody>
-                    <tfoot class="checkout__totals-footer">
-                      <tr>
-                        <th>Total</th>
-                        <td>฿2,272.00</td>
-                      </tr>
-                    </tfoot>
-                  </table>
-                  <button type="submit" class="btn btn-primary btn-xl col-lg-4 my-2" style="float: right;">
-                    Place Order
-                  </button>
-                  <a href="waitingOrder.php">go</a>
-                </div>
+          <div class="col-12 col-lg-6 col-xl-5 mt-4 mt-lg-0">
+            <div class="card mb-0">
+              <div class="card-body">
+                <h3 class="card-title">Your Order</h3>
+                <table class="checkout__totals">
+                  <thead class="checkout__totals-header">
+                    <tr>
+                      <th>Product</th>
+                      <th>Total</th>
+                    </tr>
+                  </thead>
+                  <tbody class="checkout__totals-products">
+                    <tr>
+                      <td>Electric Planer Brandix KL370090G 300 Watts × 2</td>
+                      <td>$1,398.00</td>
+                    </tr>
+                  </tbody>
+                  <!-- <tbody class="checkout__totals-subtotals">
+                    <tr>
+                      <th>Subtotal</th>
+                      <td>5,877</td>
+                    </tr>
+                  </tbody> -->
+                  <tfoot class="checkout__totals-footer">
+                    <tr>
+                      <th>Total</th>
+                      <td>5,877</td>
+                    </tr>
+                  </tfoot>
+                </table>
+                <button type="submit" class="btn btn-primary btn-xl btn-block"
+                  onclick="document.location='./payment.php'">Payment Method</button>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- site__body / end -->
-    <!-- site__footer -->
-    <?php include"layouts/footer.php"?>
-    <!-- site__footer / end -->
+  </div>
+
+
+  <!-- site__body / end -->
+  <!-- site__footer -->
+  <?php include"layouts/footer.php"?>
+  <!-- site__footer / end -->

@@ -147,7 +147,7 @@
                 </div>
 
                 <!--icon หัวใจ-->
-                <div class="indicator">
+                <!-- <div class="indicator">
                   <a href="wishlist.php" class="indicator__button">
                     <span class="indicator__area">
                       <svg width="20px" height="20px">
@@ -156,7 +156,7 @@
                       <span class="indicator__value">0</span>
                     </span>
                   </a>
-                </div>
+                </div> -->
 
                 <!--icon ตะกร้า-->
                 <div class="indicator indicator--trigger--click">
@@ -379,25 +379,14 @@
                       <span class="text-success">In Stock</span>
                     </div>
                     <div class="product-card__prices">
-                      <span class="product-card__prices" style="color: LightSkyBlue;">฿259</span> &emsp;&emsp;&emsp;
-                      <span><small>Sold 0 pieces</small></span>
-                    </div>
-                    <div class="product-card__buttons">
-                      <button class="btn btn-primary product-card__addtocart" type="button">Add To Cart</button>
-                      <button class="btn btn-light btn-svg-icon btn-svg-icon--fake-svg product-card__wishlist"
-                        type="button">
-                        <svg width="16px" height="16px">
-                          <use xlink:href="images/sprite.svg#wishlist-16"></use>
-                        </svg>
-                        <span class="fake-svg-icon fake-svg-icon--wishlist-16"></span>
-                      </button>
+                      <span class="product-card__prices" style="color: LightSkyBlue;">฿259</span>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div class="block-products-carousel__column">
+            <!-- <div class="block-products-carousel__column">
               <div class="block-products-carousel__cell">
                 <div class="product-card">
                   <div class="product-card__image">
@@ -416,18 +405,7 @@
                       <span class="text-success">In Stock</span>
                     </div>
                     <div class="product-card__prices">
-                      <span class="product-card__prices" style="color: LightSkyBlue;">฿259</span> &emsp;&emsp;&emsp;
-                      <span><small>Sold 0 pieces</small></span>
-                    </div>
-                    <div class="product-card__buttons">
-                      <button class="btn btn-primary product-card__addtocart" type="button">Add To Cart</button>
-                      <button class="btn btn-light btn-svg-icon btn-svg-icon--fake-svg product-card__wishlist"
-                        type="button">
-                        <svg width="16px" height="16px">
-                          <use xlink:href="images/sprite.svg#wishlist-16"></use>
-                        </svg>
-                        <span class="fake-svg-icon fake-svg-icon--wishlist-16"></span>
-                      </button>
+                      <span class="product-card__prices" style="color: LightSkyBlue;">฿259</span>
                     </div>
                   </div>
                 </div>
@@ -447,18 +425,7 @@
                   </div>
                   <div class="product-card__actions">
                     <div class="product-card__prices">
-                      <span class="product-card__prices" style="color: LightSkyBlue;">฿299</span> &emsp;&emsp;&emsp;
-                      <span><small>Sold 0 pieces</small></span>
-                    </div>
-                    <div class="product-card__buttons">
-                      <button class="btn btn-primary product-card__addtocart" type="button">Add To Cart</button>
-                      <button class="btn btn-light btn-svg-icon btn-svg-icon--fake-svg product-card__wishlist"
-                        type="button">
-                        <svg width="16px" height="16px">
-                          <use xlink:href="images/sprite.svg#wishlist-16"></use>
-                        </svg>
-                        <span class="fake-svg-icon fake-svg-icon--wishlist-16"></span>
-                      </button>
+                      <span class="product-card__prices" style="color: LightSkyBlue;">฿299</span>
                     </div>
                   </div>
                 </div>
@@ -480,23 +447,12 @@
                   </div>
                   <div class="product-card__actions">
                     <div class="product-card__prices">
-                      <span class="product-card__prices" style="color: LightSkyBlue;">฿99</span> &emsp;&emsp;&emsp;
-                      <span><small>Sold 0 pieces</small></span>
-                    </div>
-                    <div class="product-card__buttons">
-                      <button class="btn btn-primary product-card__addtocart" type="button">Add To Cart</button>
-                      <button class="btn btn-light btn-svg-icon btn-svg-icon--fake-svg product-card__wishlist"
-                        type="button">
-                        <svg width="16px" height="16px">
-                          <use xlink:href="images/sprite.svg#wishlist-16"></use>
-                        </svg>
-                        <span class="fake-svg-icon fake-svg-icon--wishlist-16"></span>
-                      </button>
+                      <span class="product-card__prices" style="color: LightSkyBlue;">฿99</span>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
@@ -531,79 +487,6 @@
               <div class="block-products-carousel__cell">
                 <div class="product-card">
                   <div class="product-card__image">
-                    <a href="product.html">
-                      <img src="images/Speaker/GT-2.jpg" alt="">
-                    </a>
-                  </div>
-                  <div class="product-card__info">
-                    <div class="product-card__name font-weight-bold">
-                      <a href="product.html">GT-112 Portable wireless speaker, HIFI sound </a>
-                    </div>
-                  </div>
-                  <div class="product-card__actions">
-                    <div class="product-card__availability">Availability:
-                      <span class="text-success">In Stock</span>
-                    </div>
-                    <div class="product-card__prices">
-                      <span class="product-card__prices" style="color: LightSkyBlue;">฿259</span> &emsp;&emsp;&emsp;
-                      <span><small>Sold 0 pieces</small></span>
-                    </div>
-                    <div class="product-card__buttons">
-                      <button class="btn btn-primary product-card__addtocart" type="button">Add To Cart</button>
-                      <button class="btn btn-light btn-svg-icon btn-svg-icon--fake-svg product-card__wishlist"
-                        type="button">
-                        <svg width="16px" height="16px">
-                          <use xlink:href="images/sprite.svg#wishlist-16"></use>
-                        </svg>
-                        <span class="fake-svg-icon fake-svg-icon--wishlist-16"></span>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="block-products-carousel__column">
-              <div class="block-products-carousel__cell">
-                <div class="product-card">
-                  <div class="product-card__image">
-                    <a href="product.html">
-                      <img src="images/Speaker/TG-6.jpg" alt="">
-                    </a>
-                  </div>
-                  <div class="product-card__info">
-                    <div class="product-card__name font-weight-bold">
-                      <a href="product.html">TG-113 Wireless Speaker Portable Fabric Stereo</a>
-                    </div>
-                  </div>
-
-                  <div class="product-card__actions">
-                    <div class="product-card__availability">Availability:
-                      <span class="text-success">In Stock</span>
-                    </div>
-                    <div class="product-card__prices">
-                      <span class="product-card__prices" style="color: LightSkyBlue;">฿259</span> &emsp;&emsp;&emsp;
-                      <span><small>Sold 0 pieces</small></span>
-                    </div>
-                    <div class="product-card__buttons">
-                      <button class="btn btn-primary product-card__addtocart" type="button">Add To Cart</button>
-                      <button class="btn btn-light btn-svg-icon btn-svg-icon--fake-svg product-card__wishlist"
-                        type="button">
-                        <svg width="16px" height="16px">
-                          <use xlink:href="images/sprite.svg#wishlist-16"></use>
-                        </svg>
-                        <span class="fake-svg-icon fake-svg-icon--wishlist-16"></span>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="block-products-carousel__column">
-              <div class="block-products-carousel__cell">
-                <div class="product-card">
-                  <div class="product-card__image">
                     <a href="product.html"><img src="images/Earphones/i12-6.png" alt=""></a>
                   </div>
                   <div class="product-card__info">
@@ -613,52 +496,9 @@
                   </div>
                   <div class="product-card__actions">
                     <div class="product-card__prices">
-                      <span class="product-card__prices" style="color: LightSkyBlue;">฿299</span> &emsp;&emsp;&emsp;
-                      <span><small>Sold 0 pieces</small></span>
+                      <span class="product-card__prices" style="color: LightSkyBlue;">฿299</span>
                     </div>
-                    <div class="product-card__buttons">
-                      <button class="btn btn-primary product-card__addtocart" type="button">Add To Cart</button>
-                      <button class="btn btn-light btn-svg-icon btn-svg-icon--fake-svg product-card__wishlist"
-                        type="button">
-                        <svg width="16px" height="16px">
-                          <use xlink:href="images/sprite.svg#wishlist-16"></use>
-                        </svg>
-                        <span class="fake-svg-icon fake-svg-icon--wishlist-16"></span>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
 
-            <div class="block-products-carousel__column">
-              <div class="block-products-carousel__cell">
-                <div class="product-card">
-                  <div class="product-card__image">
-                    <a href="product.html">
-                      <img src="images/Charging/4.jpg" alt="">
-                    </a>
-                  </div>
-                  <div class="product-card__info">
-                    <div class="product-card__name font-weight-bold">
-                      <a href="product.html">3 In 1 Charging Cable Micro Quick Charge </a>
-                    </div>
-                  </div>
-                  <div class="product-card__actions">
-                    <div class="product-card__prices">
-                      <span class="product-card__prices" style="color: LightSkyBlue;">฿99</span> &emsp;&emsp;&emsp;
-                      <span><small>Sold 0 pieces</small></span>
-                    </div>
-                    <div class="product-card__buttons">
-                      <button class="btn btn-primary product-card__addtocart" type="button">Add To Cart</button>
-                      <button class="btn btn-light btn-svg-icon btn-svg-icon--fake-svg product-card__wishlist"
-                        type="button">
-                        <svg width="16px" height="16px">
-                          <use xlink:href="images/sprite.svg#wishlist-16"></use>
-                        </svg>
-                        <span class="fake-svg-icon fake-svg-icon--wishlist-16"></span>
-                      </button>
-                    </div>
                   </div>
                 </div>
               </div>
@@ -698,110 +538,6 @@
                 <div class="product-card">
                   <div class="product-card__image">
                     <a href="product.html">
-                      <img src="images/Speaker/GT-2.jpg" alt="">
-                    </a>
-                  </div>
-                  <div class="product-card__info">
-                    <div class="product-card__name font-weight-bold">
-                      <a href="product.html">GT-112 Portable wireless speaker, HIFI sound </a>
-                    </div>
-                  </div>
-                  <div class="product-card__actions">
-                    <div class="product-card__availability">Availability:
-                      <span class="text-success">In Stock</span>
-                    </div>
-                    <div class="product-card__prices">
-                      <span class="product-card__prices" style="color: LightSkyBlue;">฿259</span> &emsp;&emsp;&emsp;
-                      <span><small>Sold 0 pieces</small></span>
-                    </div>
-                    <div class="product-card__buttons">
-                      <button class="btn btn-primary product-card__addtocart" type="button">Add To Cart</button>
-                      <button class="btn btn-light btn-svg-icon btn-svg-icon--fake-svg product-card__wishlist"
-                        type="button">
-                        <svg width="16px" height="16px">
-                          <use xlink:href="images/sprite.svg#wishlist-16"></use>
-                        </svg>
-                        <span class="fake-svg-icon fake-svg-icon--wishlist-16"></span>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="block-products-carousel__column">
-              <div class="block-products-carousel__cell">
-                <div class="product-card">
-                  <div class="product-card__image">
-                    <a href="product.html">
-                      <img src="images/Speaker/TG-6.jpg" alt="">
-                    </a>
-                  </div>
-                  <div class="product-card__info">
-                    <div class="product-card__name font-weight-bold">
-                      <a href="product.html">TG-113 Wireless Speaker Portable Fabric Stereo</a>
-                    </div>
-                  </div>
-
-                  <div class="product-card__actions">
-                    <div class="product-card__availability">Availability:
-                      <span class="text-success">In Stock</span>
-                    </div>
-                    <div class="product-card__prices">
-                      <span class="product-card__prices" style="color: LightSkyBlue;">฿259</span> &emsp;&emsp;&emsp;
-                      <span><small>Sold 0 pieces</small></span>
-                    </div>
-                    <div class="product-card__buttons">
-                      <button class="btn btn-primary product-card__addtocart" type="button">Add To Cart</button>
-                      <button class="btn btn-light btn-svg-icon btn-svg-icon--fake-svg product-card__wishlist"
-                        type="button">
-                        <svg width="16px" height="16px">
-                          <use xlink:href="images/sprite.svg#wishlist-16"></use>
-                        </svg>
-                        <span class="fake-svg-icon fake-svg-icon--wishlist-16"></span>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="block-products-carousel__column">
-              <div class="block-products-carousel__cell">
-                <div class="product-card">
-                  <div class="product-card__image">
-                    <a href="product.html"><img src="images/Earphones/i12-6.png" alt=""></a>
-                  </div>
-                  <div class="product-card__info">
-                    <div class="product-card__name font-weight-bold">
-                      <a href="product.html">Auriculares Air Ear Pods Inpod I12 TWS</a>
-                    </div>
-                  </div>
-                  <div class="product-card__actions">
-                    <div class="product-card__prices">
-                      <span class="product-card__prices" style="color: LightSkyBlue;">฿299</span> &emsp;&emsp;&emsp;
-                      <span><small>Sold 0 pieces</small></span>
-                    </div>
-                    <div class="product-card__buttons">
-                      <button class="btn btn-primary product-card__addtocart" type="button">Add To Cart</button>
-                      <button class="btn btn-light btn-svg-icon btn-svg-icon--fake-svg product-card__wishlist"
-                        type="button">
-                        <svg width="16px" height="16px">
-                          <use xlink:href="images/sprite.svg#wishlist-16"></use>
-                        </svg>
-                        <span class="fake-svg-icon fake-svg-icon--wishlist-16"></span>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="block-products-carousel__column">
-              <div class="block-products-carousel__cell">
-                <div class="product-card">
-                  <div class="product-card__image">
-                    <a href="product.html">
                       <img src="images/Charging/4.jpg" alt="">
                     </a>
                   </div>
@@ -813,9 +549,9 @@
                   <div class="product-card__actions">
                     <div class="product-card__prices">
                       <span class="product-card__prices" style="color: LightSkyBlue;">฿99</span> &emsp;&emsp;&emsp;
-                      <span><small>Sold 0 pieces</small></span>
+                      <!-- <span><small>Sold 0 pieces</small></span> -->
                     </div>
-                    <div class="product-card__buttons">
+                    <!-- <div class="product-card__buttons">
                       <button class="btn btn-primary product-card__addtocart" type="button">Add To Cart</button>
                       <button class="btn btn-light btn-svg-icon btn-svg-icon--fake-svg product-card__wishlist"
                         type="button">
@@ -824,7 +560,7 @@
                         </svg>
                         <span class="fake-svg-icon fake-svg-icon--wishlist-16"></span>
                       </button>
-                    </div>
+                    </div> -->
                   </div>
                 </div>
               </div>

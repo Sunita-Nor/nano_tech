@@ -145,7 +145,7 @@
               </div>
 
               <!--icon หัวใจ-->
-              <div class="indicator">
+              <!-- <div class="indicator">
                 <a href="wishlist.php" class="indicator__button">
                   <span class="indicator__area">
                     <svg width="20px" height="20px">
@@ -154,7 +154,7 @@
                     <span class="indicator__value">0</span>
                   </span>
                 </a>
-              </div>
+              </div> -->
 
               <!--icon ตะกร้า-->
               <div class="indicator indicator--trigger--click">
