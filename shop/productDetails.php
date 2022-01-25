@@ -202,14 +202,14 @@
                     <div class="spec__name">Certification</div>
                     <div class="spec__value">CE</div>
                   </div>
-                  <div class="spec__row">
+                  <!-- <div class="spec__row">
                     <div class="spec__name">Play time</div>
                     <div class="spec__value">4 H</div>
                   </div>
                   <div class="spec__row">
                     <div class="spec__name">Weight</div>
                     <div class="spec__value">1.5 kg</div>
-                  </div>
+                  </div> -->
                 </div>
                 <div class="spec__section">
                   <h4 class="spec__section-title">Dimensions</h4>

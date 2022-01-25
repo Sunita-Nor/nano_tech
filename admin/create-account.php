@@ -2,7 +2,7 @@
 <?php include"layouts/head.php"?>
 <!-- Header End-->
 
-<style>
+<!-- <style>
 body {
   margin: 0;
   padding: 0;
@@ -10,7 +10,7 @@ body {
   height: 100vh;
   overflow: hidden;
 }
-</style>
+</style> -->
 
 
 <!-- ซ่อนทั้งแถบเลื่อนแนวนอนและแนวตั้ง -->
@@ -345,8 +345,8 @@ $(document).ready(function() {
         <!-- end card-body -->
       </div>
       <!-- end card -->
-      <p class="text-white text-center mt-1 mb-0">Already have an account?
-        <a href="signin.php" class="text-white ml-1">Sign In</a>
+      <p class="text-dark text-center mt-1 mb-0">Already have an account?
+        <a href="signin.php" class="text-primary2 ml-1">Sign In</a>
       </p>
       <!-- end row -->
     </div>

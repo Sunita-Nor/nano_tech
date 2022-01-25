@@ -2,7 +2,7 @@
 <?php include"layouts/head.php"?>
 <!-- Header End-->
 
-<style>
+<!-- <style>
 body {
   margin: 0;
   padding: 0;
@@ -10,7 +10,7 @@ body {
   height: 100vh;
   overflow: hidden;
 }
-</style>
+</style> -->
 
 
 <div class="container py-5" id="main-wrapper">
@@ -75,8 +75,8 @@ body {
         <!-- end card-body -->
       </div>
       <!-- end card -->
-      <p class="text-white text-center mt-3 mb-0">Create an Account ?
-        <a href="create-account.php" class="text-white ml-1">Sign Up</a>
+      <p class="text-dark text-center mt-3 mb-0">Create an Account ?
+        <a href="create-account.php" class="text-primary2 ml-1">Sign Up</a>
       </p>
       <!-- end row -->
     </div>
