@@ -279,6 +279,45 @@
                         </div>
                       </div>
 
+                      <div class="modal-content ">
+                        <div class="modal-body">
+                          <div class="form_field_outer">
+                            <div class="row form_field_outer_row">
+
+                              <div class="form-group col-md-6">
+                                <div class="form-group form-group-default">
+                                  <label style="font-size: 20px;">Color</label>
+                                  <input type="color" class="form-control" name="color[]" id="color_no_1"
+                                    value="#00BFFF">
+                                </div>
+                              </div>
+
+                              <div class="form-group col-md-4">
+                                <div class="form-group form-group-default">
+                                  <label style="font-size: 20px;">Number of products</label>
+                                  <input type="number" class="form-control" name="number_no[]" id="number_no_1"
+                                    placeholder="Fill Number of products">
+                                </div>
+                              </div>
+
+                              <div class="form-group col-md-2 add_del_btn_outer">
+                                <button class="btn_round1 add_node_btn_frm_field" title="Add Item">
+                                  <i class="fas fa-plus"></i>
+                                </button>
+
+                                <button class="btn_round1 add_node_btn_frm_field" title="Copy or clone this row">
+                                  <i class="fas fa-copy"></i>
+                                </button>
+
+                                <button class="btn_round remove_node_btn_frm_field" disabled>
+                                  <i class="fas fa-trash-alt"></i>
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
                       <div class="col-sm-12 ">
                         <div class="form-group form-group-default">
                           <label style="font-size: 20px;">Image Uploading</label>
@@ -296,74 +335,18 @@
                         </div>
                       </div>
                     </div>
+
+                    <div class="modal-footer no-bd">
+                      <button type="button" class="btn btn-danger">Close</button>
+                      <button type="submit" id="submit" class="btn btn-info">Add</button>
+                    </div>
+
                   </form>
                 </div>
               </div>
             </div>
           </div>
         </div>
-
-        <div class="row">
-          <div class="col-md-12">
-            <div class="card">
-              <div class="card-header">
-                <div class="d-flex align-items-center">
-                  <h4 class="card-title">Add Item</h4>
-                  <!-- <button class="btn btn-outline-lite add_new_frm_field_btn ml-auto">
-                    <i class="fas fa-plus add_icon"></i> Add Item
-                  </button> -->
-                </div>
-              </div>
-
-              <div class="modal-content ">
-                <div class="modal-body">
-                  <p class="small">Create a new row using this form, make sure you fill them all.</p>
-                  <div class="form_field_outer">
-                    <div class="row form_field_outer_row">
-
-                      <div class="form-group col-md-6">
-                        <div class="form-group form-group-default">
-                          <label style="font-size: 20px;">Color</label>
-                          <input type="color" class="form-control" name="color[]" id="color_no_1" value="#00BFFF">
-                        </div>
-                      </div>
-
-                      <div class="form-group col-md-4">
-                        <div class="form-group form-group-default">
-                          <label style="font-size: 20px;">Number of products</label>
-                          <input type="number" class="form-control" name="number_no[]" id="number_no_1"
-                            placeholder="Fill Number of products">
-                        </div>
-                      </div>
-
-                      <div class="form-group col-md-2 add_del_btn_outer">
-                        <button class="btn_round1 add_node_btn_frm_field" title="Add Item">
-                          <i class="fas fa-plus"></i>
-                        </button>
-
-                        <button class="btn_round1 add_node_btn_frm_field" title="Copy or clone this row">
-                          <i class="fas fa-copy"></i>
-                        </button>
-
-                        <button class="btn_round remove_node_btn_frm_field" disabled>
-                          <i class="fas fa-trash-alt"></i>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="modal-footer no-bd">
-                    <button type="button" class="btn btn-danger">Close</button>
-                    <button type="submit" id="submit" class="btn btn-info">Add</button>
-                  </div>
-
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
       </div>
     </div>
     <!-- include footer -->
