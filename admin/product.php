@@ -132,12 +132,12 @@
                   <table id="add-row" class="display table table-striped table-hover">
                     <thead>
                       <tr>
-                        <th style="width: 12%">Name</th>
+                        <th style="width: 15%">Name</th>
                         <th style="width: 11%">Category</th>
                         <th style="width: 20%">image</th>
                         <th style="width: 5%">Price</th>
                         <th style="width: 20%">Detail</th>
-                        <th style="width: 10%">Action</th>
+                        <th style="width: 5%">Action</th>
                       </tr>
                     </thead>
                     <tfoot>
