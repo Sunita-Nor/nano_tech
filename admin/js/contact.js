@@ -80,6 +80,17 @@ $(document).ready(function() {
 
     $(document).on('click', '.delete', function() {
         var pt_id = $(this).attr("id");
+
+        if (parseInt(pt_id) === 121 || parseInt(pt_id) === 122) {
+            $.alert({
+                icon: 'fas fa-exclamation-triangle',
+                type: 'red',
+                title: 'The item can not be deleted',
+                content: 'because this product category is being used.',
+            });
+            return;
+        }
+
         $.confirm({
             icon: 'fas fa-exclamation-triangle',
             title: 'Warning!',

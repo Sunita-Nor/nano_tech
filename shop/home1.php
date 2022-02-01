@@ -1,4 +1,7 @@
-<?php include"layouts/head.php"?>
+<?php 
+include"layouts/head.php";
+require_once 'includes/database.php';
+?>
 
 <!-- mobilemenu -->
 <?php include"layouts/mobileMenu.php"?>
@@ -282,98 +285,36 @@
         <div class="block-products-carousel__slider">
           <div class="block-products-carousel__preloader"></div>
           <div class="owl-carousel">
+            <?php 
+                $sql = "SELECT * FROM productmaster LEFT JOIN product_img ON productmaster.pm_id = product_img.pm_id WHERE 
+                        productmaster.pt_id = 121 GROUP BY productmaster.pm_id ORDER BY productmaster.pm_id DESC LIMIT 5";
+                  $stmt = $pdo->prepare($sql);
+                  $stmt->execute();
+                    while($result = $stmt->fetch(PDO::FETCH_ASSOC)){
+            ?>
             <div class="block-products-carousel__column">
               <div class="block-products-carousel__cell">
                 <div class="product-card">
                   <div class="product-card__image">
                     <a href="productDetails.php">
-                      <img src="images/Speaker/GT-2.jpg" alt="">
+                      <img class="img-fluid" src="../admin/<?php echo $result["img_name"]; ?>" alt="Colorlib Template">
                     </a>
                   </div>
                   <div class="product-card__info">
                     <div class="product-card__name font-weight-bold">
-                      <a href="productDetails.php">GT-112 Portable wireless speaker, HIFI sound </a>
+                      <a href="productDetails.php"><?php echo $result["pm_name"];?></a>
                     </div>
                   </div>
                   <div class="product-card__actions">
-                    <div class="product-card__availability">Availability:
-                      <span class="text-success">In Stock</span>
-                    </div>
                     <div class="product-card__prices">
-                      <span class="product-card__prices" style="color: LightSkyBlue;">฿259</span>
+                      <span class="product-card__prices" style="color: LightSkyBlue;">฿
+                        <?php echo $result["pm_price"];?></span>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-
-            <!-- <div class="block-products-carousel__column">
-              <div class="block-products-carousel__cell">
-                <div class="product-card">
-                  <div class="product-card__image">
-                    <a href="product.html">
-                      <img src="images/Speaker/TG-6.jpg" alt="">
-                    </a>
-                  </div>
-                  <div class="product-card__info">
-                    <div class="product-card__name font-weight-bold">
-                      <a href="product.html">TG-113 Wireless Speaker Portable Fabric Stereo</a>
-                    </div>
-                  </div>
-
-                  <div class="product-card__actions">
-                    <div class="product-card__availability">Availability:
-                      <span class="text-success">In Stock</span>
-                    </div>
-                    <div class="product-card__prices">
-                      <span class="product-card__prices" style="color: LightSkyBlue;">฿259</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="block-products-carousel__column">
-              <div class="block-products-carousel__cell">
-                <div class="product-card">
-                  <div class="product-card__image">
-                    <a href="product.html"><img src="images/Earphones/i12-6.png" alt=""></a>
-                  </div>
-                  <div class="product-card__info">
-                    <div class="product-card__name font-weight-bold">
-                      <a href="product.html">Auriculares Air Ear Pods Inpod I12 TWS</a>
-                    </div>
-                  </div>
-                  <div class="product-card__actions">
-                    <div class="product-card__prices">
-                      <span class="product-card__prices" style="color: LightSkyBlue;">฿299</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="block-products-carousel__column">
-              <div class="block-products-carousel__cell">
-                <div class="product-card">
-                  <div class="product-card__image">
-                    <a href="product.html">
-                      <img src="images/Charging/4.jpg" alt="">
-                    </a>
-                  </div>
-                  <div class="product-card__info">
-                    <div class="product-card__name font-weight-bold">
-                      <a href="product.html">3 In 1 Charging Cable Micro Quick Charge </a>
-                    </div>
-                  </div>
-                  <div class="product-card__actions">
-                    <div class="product-card__prices">
-                      <span class="product-card__prices" style="color: LightSkyBlue;">฿99</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div> -->
+            <?php } ?>
           </div>
         </div>
       </div>

@@ -428,7 +428,6 @@
         modal.on('shown.bs.modal', function() {
             modal.find('.product').each(function() {
                 const gallery = $(this).find('.product-gallery');
-
                 if (gallery.length > 0) {
                     initProductGallery(gallery[0], $(this).data('layout'));
                 }
@@ -450,7 +449,7 @@
         $('.block-products-carousel').each(function() {
             const layout = $(this).data('layout');
             const options = {
-                items: 4,
+                items: 1,
                 margin: 14,
                 nav: false,
                 dots: false,
