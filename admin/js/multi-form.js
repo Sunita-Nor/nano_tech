@@ -47,7 +47,7 @@
             form.find('#yourName').text(' ');
             form.find('#birthdayText').text(' ');
             form.find('#genderText').text(' ');
-            form.find('#addressText').text(' ');
+            // form.find('#addressText').text(' ');
 
             let email = form.find('#email').val();
             let username = form.find('#username').val();
@@ -66,7 +66,7 @@
             form.find('#yourName').append(yourName);
             form.find('#birthdayText').append(birthday);
             form.find('#genderText').append(gender);
-            form.find('#addressText').append(address);
+            // form.find('#addressText').append(address);
             /* END เรียกข้อมูลมาแสดง */
 
             if ("validations" in args &&

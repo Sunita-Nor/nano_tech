@@ -20,11 +20,11 @@ $gender = $data['gender'];
 $phone = $data['phone'];
 
 /* ข้อมูลที่อยู่  */
-$address = $data["address"];
-$tambol = $data["tambol"];
-$amphur = $data["amphur"];
-$province = $data["province"];
-$postalCode = $data["postalCode"];
+// $address = $data["address"];
+// $tambol = $data["tambol"];
+// $amphur = $data["amphur"];
+// $province = $data["province"];
+// $postalCode = $data["postalCode"];
 
 $status = $data["status"];
 

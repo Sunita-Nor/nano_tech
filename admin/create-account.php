@@ -230,7 +230,7 @@ $(document).ready(function() {
                   </div>
 
                   <!-- step3 -->
-                  <div class="form-group tab">
+                  <!-- <div class="form-group tab">
                     <div class="row">
                       <div class="col">
                         <label>House No.</label>
@@ -267,7 +267,7 @@ $(document).ready(function() {
                           placeholder="Postal Code" value="73000">
                       </div>
                     </div>
-                  </div>
+                  </div> -->
 
                   <!-- step4 -->
                   <div class="form-group tab mt-3">
@@ -300,11 +300,11 @@ $(document).ready(function() {
                       <div class="col-sm-4 weight-600"><label>Birthday</label></div>
                       <div class="col-sm-8"><span id="birthdayText"></span></div>
                     </div>
-
+                    <!-- 
                     <div class="row mt-3">
                       <div class="col-sm-4 weight-600"><label>Address</label></div>
                       <div class="col-sm-8"><span id="addressText"></span></div>
-                    </div>
+                    </div> -->
 
                     <div class="form-check mt-3">
                       <label class="form-check-label">
