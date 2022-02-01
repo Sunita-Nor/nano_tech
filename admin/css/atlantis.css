@@ -479,6 +479,73 @@ label {
 }
 
 
+/*Table Order*/
+
+a.itemside {
+    color: initial;
+    text-decoration: none;
+}
+
+.itemside {
+    position: relative;
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.itemside .left {
+    position: relative;
+    flex-shrink: 0;
+}
+
+.itemside .info {
+    padding-left: 15px;
+    padding-right: 7px;
+}
+
+.float-end {
+    float: right !important;
+}
+
+.dlist {
+    display: flex;
+}
+
+.dlist dt {
+    width: 150px;
+}
+
+.dlist dd {
+    margin-left: 30px;
+    vertical-align: baseline;
+    flex-grow: 1;
+    margin-bottom: 0;
+    text-align: right;
+}
+
+[class*=dlist] {
+    margin-bottom: 5px;
+}
+
+dl {
+    margin-top: 0;
+}
+
+.box {
+    padding: 1rem;
+    border-radius: 0.25rem;
+    border: 1px solid rgba(108, 117, 125, 0.2);
+    background: #fff;
+}
+
+img .payment {
+    vertical-align: middle;
+}
+
+
+/*End*/
+
+
 /* left */
 
 .arrow-left span {
@@ -5733,6 +5800,7 @@ label {
     min-width: 2.5rem;
     height: 2.5rem;
     line-height: 2.5rem;
+    border-radius: 100px!important;
 }
 
 

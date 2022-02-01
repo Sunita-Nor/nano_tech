@@ -20,133 +20,125 @@
   <!-- เนื้อหาข้างใน -->
   <div class="main-panel">
     <div class="content">
-      <div class="panel-header bg-primary-gradient">
-        <div class="page-inner py-5">
-          <div class="d-flex align-items-left align-items-md-center flex-column flex-md-row">
-            <div>
-              <h2 class="text-white pb-2 fw-bold">สุดยอดไปเลยเพื่อน</h2>
-              <h5 class="text-white op-7 mb-2">Free Bootstrap 4 Admin Dashboard</h5>
-            </div>
-            <!-- <div class="ml-md-auto py-2 py-md-0">
-              <a href="#" class="btn btn-white btn-border btn-round mr-2">Manage</a>
-              <a href="#" class="btn btn-white btn-border btn-round mr-2">Add Customer</a>
-            </div> -->
-          </div>
+      <div class="page-inner">
+        <div class="page-header">
+          <h4 class="page-title">Dashboard</h4>
         </div>
-      </div>
-      <div class="page-inner mt--5">
-        <div class="row mt--2">
-          <div class="col-md-6">
-            <div class="card full-height">
-              <div class="card-body">
-                <div class="card-title">สุดยอดไปเลยเพื่อน</div>
-                <div class="card-category">Daily information about statistics in system</div>
-                <div class="d-flex flex-wrap justify-content-around pb-2 pt-4">
-                  <div class="px-2 pb-2 pb-md-0 text-center">
-                    <div id="circles-1"></div>
-                    <h6 class="fw-bold mt-3 mb-0">New Users</h6>
+
+        <div class="col-md-12">
+
+          <div class="row">
+            <div class="col-sm-6 col-lg-4">
+              <div class="card p-3">
+                <div class="d-flex align-items-center">
+                  <span class="stamp stamp-md bg-info mr-3">
+                    <i class="fas fa-donate"></i>
+                  </span>
+                  <div>
+                    <h5 class="mb-1"><b><a href="#">Total Sales</a></b></h5>
+                    <small class="text-muted">฿ 0</small>
                   </div>
-                  <div class="px-2 pb-2 pb-md-0 text-center">
-                    <div id="circles-2"></div>
-                    <h6 class="fw-bold mt-3 mb-0">Sales</h6>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+              <div class="card p-3">
+                <div class="d-flex align-items-center">
+                  <span class="stamp stamp-md bg-success mr-3">
+                    <i class="fas fa-truck"></i>
+                  </span>
+                  <div>
+                    <h5 class="mb-1"><b><a href="#">Total Orders</a></b></h5>
+                    <small class="text-muted">0</small>
                   </div>
-                  <div class="px-2 pb-2 pb-md-0 text-center">
-                    <div id="circles-3"></div>
-                    <h6 class="fw-bold mt-3 mb-0">Subscribers</h6>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+              <div class="card p-3">
+                <div class="d-flex align-items-center">
+                  <span class="stamp stamp-md bg-warning mr-3">
+                    <i class="fas fa-dolly"></i>
+                  </span>
+                  <div>
+                    <h5 class="mb-1"><b><a href="#">Total Products</a></b></h5>
+                    <small class="text-muted">0</small>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-md-6">
-            <div class="card full-height">
-              <div class="card-body">
-                <div class="card-title">Total income & spend statistics</div>
-                <div class="row py-3">
-                  <div class="col-md-4 d-flex flex-column justify-content-around">
-                    <div>
-                      <h6 class="fw-bold text-uppercase text-success op-8">Total Income</h6>
-                      <h3 class="fw-bold">$9.782</h3>
-                    </div>
-                    <div>
-                      <h6 class="fw-bold text-uppercase text-danger op-8">Total Spend</h6>
-                      <h3 class="fw-bold">$1,248</h3>
-                    </div>
-                  </div>
-                  <div class="col-md-8">
-                    <div id="chart-container">
-                      <canvas id="totalIncomeChart"></canvas>
-                    </div>
-                  </div>
-                </div>
+
+          <div class="card">
+            <div class="card-header">
+              <div class="card-title">Multiple Line Chart</div>
+            </div>
+            <div class="card-body">
+              <div class="chart-container">
+                <canvas id="multipleLineChart"></canvas>
               </div>
             </div>
           </div>
         </div>
 
+        <div class="col-md-12">
+          <div class="card">
+            <div class="card-header">
+              <h4 class="card-title">Latest orders</h4>
+            </div>
+            <div class="card-body">
+              <div class="table-responsive">
+                <table id="basic-datatables" class="display table table-striped table-hover">
+                  <!-- <thead>
+                    <tr>
+                      <th>Name</th>
+                      <th>Position</th>
+                      <th>Office</th>
+                      <th>Age</th>
+                      <th>Start date</th>
+                      <th>Salary</th>
+                    </tr>
+                  </thead>
+                  <tfoot>
+                    <tr>
+                      <th>Name</th>
+                      <th>Position</th>
+                      <th>Office</th>
+                      <th>Age</th>
+                      <th>Start date</th>
+                      <th>Salary</th>
+                    </tr>
+                  </tfoot> -->
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>Devon Lane</td>
+                      <td>devon@example.com</td>
+                      <td>฿ 199</td>
+                      <td><span class="badge rounded-pill alert-warning">Pending</span></td>
+                      <td>07.05.2020</td>
+                      <td style="width: 5%">
+                        <div class="form-button-action">
+                          <button type="button" data-toggle="tooltip" title="" class="btn btn-link btn-primary btn-lg"
+                            data-original-title="Edit Task">
+                            <i class="fa fa-edit"></i>
+                          </button>
+                          <button type="button" data-toggle="tooltip" title="" class="btn btn-link btn-danger"
+                            data-original-title="Remove">
+                            <i class="fa fa-times"></i>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
 
-        <div class="row">
-          <div class="col-md-8">
-            <div class="card">
-              <div class="card-header">
-                <div class="card-head-row">
-                  <div class="card-title">User Statistics</div>
-                  <div class="card-tools">
-                    <a href="#" class="btn btn-info btn-border btn-round btn-sm mr-2">
-                      <span class="btn-label">
-                        <i class="fa fa-pencil"></i>
-                      </span>
-                      Export
-                    </a>
-                    <a href="#" class="btn btn-info btn-border btn-round btn-sm">
-                      <span class="btn-label">
-                        <i class="fa fa-print"></i>
-                      </span>
-                      Print
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="card-body">
-                <div class="chart-container" style="min-height: 375px">
-                  <canvas id="statisticsChart"></canvas>
-                </div>
-                <div id="myChartLegend"></div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card card-primary">
-              <div class="card-header">
-                <div class="card-title">Daily Sales</div>
-                <div class="card-category">March 25 - April 02</div>
-              </div>
-              <div class="card-body pb-0">
-                <div class="mb-4 mt-2">
-                  <h1>$4,578.58</h1>
-                </div>
-                <div class="pull-in">
-                  <canvas id="dailySalesChart"></canvas>
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-body pb-0">
-                <div class="h1 fw-bold float-right text-warning">+7%</div>
-                <h2 class="mb-2">213</h2>
-                <p class="text-muted">Transactions</p>
-                <div class="pull-in sparkline-fix">
-                  <div id="lineChart"></div>
-                </div>
+                  </tbody>
+                </table>
               </div>
             </div>
           </div>
         </div>
-
-
       </div>
     </div>
-
     <!-- include footer -->
     <?php include"layouts/footer.php"?>
     <!-- end include footer -->
@@ -160,101 +152,63 @@
 <?php include"layouts/script.php"?>
 <!-- end include script -->
 
-
 <script>
-Circles.create({
-  id: 'circles-1',
-  radius: 45,
-  value: 60,
-  maxValue: 100,
-  width: 7,
-  text: 5,
-  colors: ['#f1f1f1', '#FF9E27'],
-  duration: 400,
-  wrpClass: 'circles-wrp',
-  textClass: 'circles-text',
-  styleWrapper: true,
-  styleText: true
-})
-
-Circles.create({
-  id: 'circles-2',
-  radius: 45,
-  value: 70,
-  maxValue: 100,
-  width: 7,
-  text: 36,
-  colors: ['#f1f1f1', '#2BB930'],
-  duration: 400,
-  wrpClass: 'circles-wrp',
-  textClass: 'circles-text',
-  styleWrapper: true,
-  styleText: true
-})
-
-Circles.create({
-  id: 'circles-3',
-  radius: 45,
-  value: 40,
-  maxValue: 100,
-  width: 7,
-  text: 12,
-  colors: ['#f1f1f1', '#F25961'],
-  duration: 400,
-  wrpClass: 'circles-wrp',
-  textClass: 'circles-text',
-  styleWrapper: true,
-  styleText: true
-})
-
-var totalIncomeChart = document.getElementById('totalIncomeChart').getContext('2d');
-
-var mytotalIncomeChart = new Chart(totalIncomeChart, {
-  type: 'bar',
+var multipleLineChart = document.getElementById('multipleLineChart').getContext('2d')
+var myMultipleLineChart = new Chart(multipleLineChart, {
+  type: 'line',
   data: {
-    labels: ["S", "M", "T", "W", "T", "F", "S", "S", "M", "T"],
+    labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
     datasets: [{
-      label: "Total Income",
-      backgroundColor: '#ff9e27',
-      borderColor: 'rgb(23, 125, 255)',
-      data: [6, 4, 9, 5, 4, 6, 4, 3, 8, 10],
-    }],
+      label: "what",
+      borderColor: "#59d05d",
+      pointBorderColor: "#FFF",
+      pointBackgroundColor: "#59d05d",
+      pointBorderWidth: 2,
+      pointHoverRadius: 4,
+      pointHoverBorderWidth: 1,
+      pointRadius: 4,
+      backgroundColor: 'transparent',
+      fill: true,
+      borderWidth: 2,
+      data: [10, 20, 55, 75, 80, 48, 59, 55, 23, 107, 60, 87]
+    }, {
+      label: "Sales",
+      borderColor: "#f3545d",
+      pointBorderColor: "#FFF",
+      pointBackgroundColor: "#f3545d",
+      pointBorderWidth: 2,
+      pointHoverRadius: 4,
+      pointHoverBorderWidth: 1,
+      pointRadius: 4,
+      backgroundColor: 'transparent',
+      fill: true,
+      borderWidth: 2,
+      data: [10, 30, 58, 79, 90, 105, 117, 160, 185, 210, 185, 194]
+    }]
   },
   options: {
     responsive: true,
     maintainAspectRatio: false,
     legend: {
-      display: false,
+      position: 'top',
     },
-    scales: {
-      yAxes: [{
-        ticks: {
-          display: false //this will remove only the label
-        },
-        gridLines: {
-          drawBorder: false,
-          display: false
-        }
-      }],
-      xAxes: [{
-        gridLines: {
-          drawBorder: false,
-          display: false
-        }
-      }]
+    tooltips: {
+      bodySpacing: 4,
+      mode: "nearest",
+      intersect: 0,
+      position: "nearest",
+      xPadding: 10,
+      yPadding: 10,
+      caretPadding: 10
     },
+    layout: {
+      padding: {
+        left: 15,
+        right: 15,
+        top: 15,
+        bottom: 15
+      }
+    }
   }
 });
-
-$('#lineChart').sparkline([105, 103, 123, 100, 95, 105, 115], {
-  type: 'line',
-  height: '70',
-  width: '100%',
-  lineWidth: '2',
-  lineColor: '#ffa534',
-  fillColor: 'rgba(255, 165, 52, .14)'
-});
 </script>
-</body>
-
-</html>

@@ -41,8 +41,8 @@
           </li>
           <li class="nav-item active submenu">
             <a data-toggle="collapse" href="#base">
-              <i class="fas fa-layer-group"></i>
-              <p>Product</p>
+              <i class="fas fa-plus-square"></i>
+              <p> Add Product</p>
               <span class="caret"></span>
             </a>
             <div class="collapse show" id="base">
@@ -60,27 +60,12 @@
               </ul>
             </div>
           </li>
-          <!-- <li class="nav-item">
-            <a data-toggle="collapse" href="#sidebarLayouts">
-              <i class="fas fa-th-list"></i>
-              <p>Sidebar Layouts</p>
-              <span class="caret"></span>
+          <li class="nav-item">
+            <a href="orderDetail.php">
+              <i class="fas fa-shopping-cart"></i>
+              <p>Order Detail</p>
             </a>
-            <div class="collapse" id="sidebarLayouts">
-              <ul class="nav nav-collapse">
-                <li>
-                  <a href="../sidebar-style-1.html">
-                    <span class="sub-item">Sidebar Style 1</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="../overlay-sidebar.html">
-                    <span class="sub-item">Overlay Sidebar</span>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </li> -->
+          </li>
         </ul>
       </div>
     </div>
@@ -92,10 +77,10 @@
     <div class="content">
       <div class="page-inner">
         <div class="page-header">
-          <h4 class="page-title">Product</h4>
+          <h4 class="page-title">Add Product</h4>
           <ul class="breadcrumbs">
             <li class="nav-home">
-              <a href="admin.php">
+              <a href="indexAdmin.php">
                 <i class="flaticon-home"></i>
               </a>
             </li>
@@ -103,7 +88,7 @@
               <i class="flaticon-right-arrow"></i>
             </li>
             <li class="nav-item">
-              <a href="#">Product</a>
+              <a href="#">Add Product</a>
             </li>
             <li class="separator">
               <i class="flaticon-right-arrow"></i>
@@ -122,7 +107,7 @@
                   <h4 class="card-title">Product Listing</h4>
                   <button class="btn btn-round ml-auto" onclick="document.location='addProduct.php'">
                     <i style="font-size: 12px;" class="fa fa-plus"></i>
-                    Add Product
+                    Create product
                   </button>
                 </div>
               </div>
