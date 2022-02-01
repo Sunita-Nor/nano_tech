@@ -85,6 +85,10 @@
                 </tr>
               </tbody>
             </table>
+            <a href="shop.php">
+              <i class="fas fa-angle-left mt-3" style="font-size: 20px;"></i>
+              See more products
+            </a>
           </div>
           <div class="col-12 col-lg-6 col-xl-5 mt-4 mt-lg-0">
             <div class="card mb-0">
@@ -100,7 +104,7 @@
                   <tbody class="cart__totals-body">
                     <tr>
                       <th>Shipping</th>
-                      <td>25.00<div class="cart__calc-shipping"><a href="#">Calculate Shipping</a></div>
+                      <td>35.00<div class="cart__calc-shipping">
                       </td>
                     </tr>
                   </tbody>

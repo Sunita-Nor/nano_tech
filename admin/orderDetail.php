@@ -119,8 +119,8 @@
                         <div>
                           <h5 class="mb-1"><b><a href="#">Order info</a></b></h5>
                           <small class="text-muted">Shipping: Fargo express</small><br>
-                          <small class="text-muted">Pay method: card</small><br>
-                          <small class="text-muted">Status: new</small>
+                          <small class="text-muted">Pay method: SCB</small><br>
+                          <small class="text-muted">Status: <span style="color: red;">new</span></small>
                         </div>
                       </div>
                     </div>
@@ -175,8 +175,12 @@
                                 <dd>฿ 199</dd>
                               </dl>
                               <dl class="dlist">
+                                <dt>Shipping cost:</dt>
+                                <dd class="font-weight-bold">฿ 35</dd>
+                              </dl>
+                              <dl class="dlist">
                                 <dt>Grand total:</dt>
-                                <dd class="font-weight-bold">฿ 199</dd>
+                                <dd class="font-weight-bold">฿ 234</dd>
                               </dl>
                               <dl class="dlist">
                                 <dt>Status:</dt>
