@@ -98,20 +98,20 @@
                   <thead class="cart__totals-header">
                     <tr>
                       <th>Subtotal</th>
-                      <td>5,877.00</td>
+                      <td>5,877</td>
                     </tr>
                   </thead>
                   <tbody class="cart__totals-body">
                     <tr>
                       <th>Shipping</th>
-                      <td>35.00<div class="cart__calc-shipping">
+                      <td>35<div class="cart__calc-shipping">
                       </td>
                     </tr>
                   </tbody>
                   <tfoot class="cart__totals-footer">
                     <tr>
                       <th>Total</th>
-                      <td>5,902.00</td>
+                      <td>5,902</td>
                     </tr>
                   </tfoot>
                 </table>

@@ -189,12 +189,12 @@
                       <td>$1,398.00</td>
                     </tr>
                   </tbody>
-                  <!-- <tbody class="checkout__totals-subtotals">
+                  <tbody class="checkout__totals-subtotals">
                     <tr>
-                      <th>Subtotal</th>
-                      <td>5,877</td>
+                      <th>Shipping</th>
+                      <td>35</td>
                     </tr>
-                  </tbody> -->
+                  </tbody>
                   <tfoot class="checkout__totals-footer">
                     <tr>
                       <th>Total</th>
