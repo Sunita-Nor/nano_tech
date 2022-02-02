@@ -84,7 +84,7 @@ $(document).ready(function() {
         if (parseInt(pt_id) === 121 || parseInt(pt_id) === 122) {
             $.alert({
                 icon: 'fas fa-exclamation-triangle',
-                type: 'red',
+                type: 'orange',
                 title: 'The item can not be deleted',
                 content: 'because this product category is being used.',
             });

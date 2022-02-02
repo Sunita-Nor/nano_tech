@@ -116,7 +116,7 @@
                 <table id="basic-datatables" class="display table">
                   <thead>
                     <tr>
-                      <th style="width: 5%">#ID</th>
+                      <th style="width: 5%">ID</th>
                       <th>Name</th>
                       <th>Email</th>
                       <th>Total</th>
