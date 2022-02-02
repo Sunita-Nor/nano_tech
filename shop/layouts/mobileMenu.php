@@ -26,26 +26,7 @@
 
         <li class="mobile-links__item" data-collapse-item>
           <div class="mobile-links__item-title">
-            <a href="blog-classic.html" class="mobile-links__item-link">Blog</a>
-            <button class="mobile-links__item-toggle" type="button" data-collapse-trigger>
-              <svg class="mobile-links__item-arrow" width="12px" height="7px">
-                <use xlink:href="images/sprite.svg#arrow-rounded-down-12x7"></use>
-              </svg>
-            </button>
-          </div>
-          <div class="mobile-links__item-sub-links" data-collapse-content>
-            <ul class="mobile-links mobile-links--level--1">
-              <li class="mobile-links__item" data-collapse-item>
-                <div class="mobile-links__item-title">
-                  <a href="blog-classic.html" class="mobile-links__item-link">Blog Classic</a>
-                </div>
-              </li>
-              <li class="mobile-links__item" data-collapse-item>
-                <div class="mobile-links__item-title">
-                  <a href="blog-grid.html" class="mobile-links__item-link">Blog Grid</a>
-                </div>
-              </li>
-            </ul>
+            <a href="shop.php" class="mobile-links__item-link">Contact Us</a>
           </div>
         </li>
 
@@ -62,22 +43,12 @@
             <ul class="mobile-links mobile-links--level--1">
               <li class="mobile-links__item" data-collapse-item>
                 <div class="mobile-links__item-title">
-                  <a href="about-us.html" class="mobile-links__item-link">About Us</a>
+                  <a href="about-us.html" class="mobile-links__item-link">How to order</a>
                 </div>
-              </li>
-              <li class="mobile-links__item" data-collapse-item>
-                <div class="mobile-links__item-title">
-                  <a href="contact-us-alt.html" class="mobile-links__item-link">Contact Us</a>
-                </div>
-              </li>
-              <li class="mobile-links__item" data-collapse-item>
-                <div class="mobile-links__item-title">
-                  <a href="faq.html" class="mobile-links__item-link">FAQ</a>
-                </div>
-              </li>
             </ul>
           </div>
         </li>
+
       </ul>
     </div>
   </div>

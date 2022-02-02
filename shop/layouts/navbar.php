@@ -4,16 +4,6 @@
     <div class="site-header__topbar topbar" id="topbar">
       <div class="topbar__container container">
         <div class="topbar__row">
-          <!-- <div class="topbar__item topbar__item--link">
-            <a class="topbar-link" href="about-us.html">About Us</a>
-          </div>
-          <div class="topbar__item topbar__item--link">
-            <a class="topbar-link" href="contact-us.html">Contacts</a>
-          </div>
-          <div class="topbar__item topbar__item--link">
-            <a class="topbar-link" href="track-order.html">Track Order</a>
-          </div> -->
-
           <div class="topbar__spring"></div>
           <div class="topbar__item">
             <div class="topbar-dropdown">
@@ -65,31 +55,10 @@
                     <span>Shop</span>
                   </a>
                 </li>
-                <!-- <div class="nav-links__menu">
-                    <ul class="menu menu--layout--classic">
-                      <li><a href="cart.php">Cart</a></li>
-                      <li><a href="checkout.php">Checkout</a></li>
-                      <li><a href="wishlist.php">Wishlist</a></li>
-                      <li><a href="track-order.html">Track Order</a></li>
-                    </ul>
-                  </div> -->
 
-
-                <!-- <li class="nav-links__item nav-links__item--with-submenu">
-                  <a href="blog-classic.html">
-                    <span> Blog
-                      <svg class="nav-links__arrow" width="9px" height="6px">
-                        <use xlink:href="images/sprite.svg#arrow-rounded-down-9x6"></use>
-                      </svg>
-                    </span>
-                  </a>
-                  <div class="nav-links__menu">
-                    <ul class="menu menu--layout--classic">
-                      <li><a href="blog-classic.html">Blog Classic</a></li>
-                      <li><a href="blog-grid.html">Blog Grid</a></li>
-                    </ul>
-                  </div>
-                </li> -->
+                <li class="nav-links__item">
+                  <a href="contact-us.html"><span>Contact Us</span></a>
+                </li>
 
                 <li class="nav-links__item nav-links__item--with-submenu">
                   <a href="#">
@@ -101,16 +70,11 @@
                   </a>
                   <div class="nav-links__menu">
                     <ul class="menu menu--layout--classic">
-                      <li><a href="about-us.html">About Us</a></li>
-                      <li><a href="contact-us-alt.html">Contact Us</a></li>
-                      <li><a href="faq.html">FAQ</a></li>
+                      <li><a href="about-us.html">How to order</a></li>
                     </ul>
                   </div>
                 </li>
 
-                <li class="nav-links__item">
-                  <a href="contact-us.html"><span>Contact Us</span></a>
-                </li>
               </ul>
             </div>
             <!-- .nav-links / end -->

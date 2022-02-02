@@ -61,6 +61,10 @@ require_once 'includes/database.php';
                     </a>
                   </li>
 
+                  <li class="nav-links__item">
+                    <a href="contact-us.html"><span>Contact Us</span></a>
+                  </li>
+
                   <li class="nav-links__item nav-links__item--with-submenu">
                     <a href="#">
                       <span> Pages
@@ -71,16 +75,11 @@ require_once 'includes/database.php';
                     </a>
                     <div class="nav-links__menu">
                       <ul class="menu menu--layout--classic">
-                        <li><a href="about-us.html">About Us</a></li>
-                        <li><a href="contact-us-alt.html">Contact Us</a></li>
-                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="about-us.html">How to order</a></li>
                       </ul>
                     </div>
                   </li>
 
-                  <li class="nav-links__item">
-                    <a href="contact-us.html"><span>Contact Us</span></a>
-                  </li>
                 </ul>
               </div>
               <!-- .nav-links / end -->
