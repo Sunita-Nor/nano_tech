@@ -1,4 +1,7 @@
-<?php include"layouts/head.php"?>
+<?php 
+include"layouts/head.php";
+require_once 'includes/database.php';
+?>
 
 <!-- mobilemenu -->
 <?php include"layouts/mobileMenu.php"?>
@@ -119,7 +122,7 @@
             <!-- .product__sidebar -->
             <div class="product__sidebar">
               <!-- <div class="product__availability">Availability: <span class="text-success">In Stock</span></div> -->
-              <div class="product__prices">$1,499.00</div>
+              <div class="product__prices">฿ 1,499.00</div>
               <!-- .product__options -->
               <form class="product__options">
                 <div class="form-group product__option">

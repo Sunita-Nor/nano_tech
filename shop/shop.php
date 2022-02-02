@@ -1,4 +1,7 @@
-<?php include"layouts/head.php"?>
+<?php 
+include"layouts/head.php";
+require_once 'includes/database.php';
+?>
 
 <!-- mobilemenu -->
 <?php include"layouts/mobileMenu.php"?>
@@ -314,7 +317,7 @@
                 <div class="view-options">
                   <div class="view-options__layout">
                     <div class="layout-switcher">
-                      <div class="layout-switcher__list">
+                      <!-- <div class="layout-switcher__list">
                         <button data-layout="grid-3-sidebar" data-with-features="false" title="Grid" type="button"
                           class="layout-switcher__button layout-switcher__button--active">
                           <svg width="16px" height="16px">
@@ -333,10 +336,10 @@
                             <use xlink:href="images/sprite.svg#layout-list-16x16"></use>
                           </svg>
                         </button>
-                      </div>
+                      </div> -->
                     </div>
                   </div>
-                  <div class="view-options__legend">Showing 6 of 98 products</div>
+                  <!-- <div class="view-options__legend">Showing 6 of 98 products</div> -->
                   <div class="view-options__divider"></div>
                   <div class="view-options__control"><label for="">Sort By</label>
                     <div>
@@ -358,48 +361,36 @@
               </div>
               <div class="products-view__list products-list" data-layout="grid-3-sidebar" data-with-features="false">
                 <div class="products-list__body">
-
+                  <?php 
+                    $sql = "SELECT * FROM productmaster LEFT JOIN product_img ON productmaster.pm_id = product_img.pm_id 
+                            GROUP BY productmaster.pm_id ORDER BY productmaster.pm_id DESC LIMIT 5";
+                    $stmt = $pdo->prepare($sql);
+                    $stmt->execute();
+                      while($result = $stmt->fetch(PDO::FETCH_ASSOC)){
+                  ?>
                   <!-- Product End-->
                   <div class="products-list__item">
                     <div class="product-card">
                       <div class="product-card__image">
-                        <a href="productDetails.php"><img src="images/products/product-3.jpg" alt=""></a>
+                        <a href="productDetails.php">
+                          <img class="img-fluid" src="../admin/<?php echo $result["img_name"]; ?>" alt="">
+                        </a>
                       </div>
                       <div class="product-card__info">
                         <div class="product-card__name">
-                          <a href="productDetails.php">Drill Screwdriver Brandix ALX7054 200 Watts</a>
+                          <a href="productDetails.php"><?php echo $result["pm_name"];?></a>
                         </div>
-
-                        <ul class="product-card__features-list">
-                          <li>Speed: 750 RPM</li>
-                          <li>Power Source: Cordless-Electric</li>
-                          <li>Battery Cell Type: Lithium</li>
-                          <li>Voltage: 20 Volts</li>
-                          <li>Battery Capacity: 2 Ah</li>
-                        </ul>
                       </div>
                       <div class="product-card__actions">
-                        <div class="product-card__availability">Availability:
-                          <span class="text-success">In Stock</span>
-                        </div>
-                        <div class="product-card__prices">$850.00</div>
+                        <div class="product-card__prices">฿ <?php echo $result["pm_price"];?></div>
                         <div class="product-card__buttons">
                           <button class="btn btn-primary product-card__addtocart" type="button">Add To Cart</button>
-                          <button class="btn btn-secondary product-card__addtocart product-card__addtocart--list"
-                            type="button">Add To Cart</button>
-                          <button class="btn btn-light btn-svg-icon btn-svg-icon--fake-svg product-card__wishlist"
-                            type="button">
-                            <svg width="16px" height="16px">
-                              <use xlink:href="images/sprite.svg#wishlist-16"></use>
-                            </svg>
-                            <span class="fake-svg-icon fake-svg-icon--wishlist-16"></span>
-                          </button>
                         </div>
                       </div>
                     </div>
                   </div>
                   <!-- Product End-->
-
+                  <?php } ?>
                 </div>
               </div>
 

@@ -297,7 +297,7 @@ require_once 'includes/database.php';
                 <div class="product-card">
                   <div class="product-card__image">
                     <a href="productDetails.php">
-                      <img class="img-fluid" src="../admin/<?php echo $result["img_name"]; ?>" alt="Colorlib Template">
+                      <img class="img-fluid" src="../admin/<?php echo $result["img_name"]; ?>" alt="">
                     </a>
                   </div>
                   <div class="product-card__info">

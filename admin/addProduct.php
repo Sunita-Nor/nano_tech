@@ -156,9 +156,9 @@
             </div>
           </li>
           <li class="nav-item">
-            <a href="orderDetail.php">
+            <a href="order.php">
               <i class="fas fa-shopping-cart"></i>
-              <p>Order Detail</p>
+              <p>Orders</p>
             </a>
           </li>
         </ul>

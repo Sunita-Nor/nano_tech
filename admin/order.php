@@ -2,6 +2,26 @@
 <?php include"layouts/head.php"?>
 <!-- Header start-->
 
+<style>
+.btn_round {
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 30px;
+  margin-left: 10px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.btn_round:hover {
+  color: #fff;
+  background: #898989;
+  border: 1px solid #898989;
+}
+</style>
+
 <div class="wrapper">
   <div class="main-header">
     <!-- Logo Header -->
@@ -64,7 +84,7 @@
           <li class="nav-item active submenu">
             <a data-toggle="collapse" href="oderDetail.php">
               <i class="fas fa-shopping-cart"></i>
-              <p>Order Detail</p>
+              <p>Orders</p>
             </a>
           </li>
         </ul>
@@ -78,23 +98,76 @@
     <div class="content">
       <div class="page-inner">
         <div class="page-header">
-          <h4 class="page-title">Order Detail</h4>
+          <h4 class="page-title">Orders</h4>
           <ul class="breadcrumbs">
             <li class="nav-home"><a href="indexAdmin.php"><i class="flaticon-home"></i></a></li>
             <li class="separator"><i class="flaticon-right-arrow"></i></li>
-            <li class="nav-item"><a href="#">Order Detail</a></li>
+            <li class="nav-item"><a href="#">Ordes</a></li>
           </ul>
         </div>
 
-        <div class="row">
-          <div class="col-md-12">
-            <div class="card">
-              <div class="card-header">
-                <div class="d-flex align-items-center">
-                  <h5 class="card-title"><i class="fas fa-calendar-alt"></i> Wed, Aug 13, 2020, 4:34PM</h5>
-                </div>
-                <small class="text-muted">Order ID: 1</small>
+        <div class="col-md-12">
+          <div class="card">
+            <div class="card-header">
+              <h4 class="card-title">orders</h4>
+            </div>
+            <div class="card-body">
+              <div class="table-responsive">
+                <table id="basic-datatables" class="display table">
+                  <thead>
+                    <tr>
+                      <th style="width: 5%">#ID</th>
+                      <th>Name</th>
+                      <th>Email</th>
+                      <th>Total</th>
+                      <th>Status</th>
+                      <th>Date</th>
+                      <th>Order Detail</th>
+                    </tr>
+                  </thead>
+                  <!-- <tfoot>
+                    <tr>
+                      <th>Name</th>
+                      <th>Position</th>
+                      <th>Office</th>
+                      <th>Age</th>
+                      <th>Start date</th>
+                      <th>Salary</th>
+                    </tr>
+                  </tfoot> -->
+                  <tbody>
+                    <tr>
+                      <td class="text-center" style="width: 5%">1</td>
+                      <td>Devon Lane</td>
+                      <td>devon@example.com</td>
+                      <td style="width: 10%">฿ 199</td>
+                      <td style="width: 5%"><span class="badge rounded-pill alert-warning">Pending</span></td>
+                      <td style="width: 5%">07.05.2020</td>
+                      <td style="width: 15%">
+                        <button class="btn_round" data-toggle="modal" data-target=".bd-example-modal-lg"
+                          title="Order Detail">
+                          <i class="fa fa-archive"></i>
+                        </button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title"><i class="fas fa-calendar-alt"></i> Wed, Aug 13, 2020, 4:34PM</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+
               <div class="modal-content ">
                 <div class="modal-body">
                   <div class="row">
@@ -119,8 +192,7 @@
                         <div>
                           <h5 class="mb-1"><b><a href="#">Order info</a></b></h5>
                           <small class="text-muted">Shipping: Fargo express</small><br>
-                          <small class="text-muted">Pay method: SCB</small><br>
-                          <small class="text-muted">Status: <span style="color: red;">new</span></small>
+                          <small class="text-muted">Pay method: SCB</small>
                         </div>
                       </div>
                     </div>
@@ -149,10 +221,10 @@
                     <table class="table table-hover">
                       <thead>
                         <tr>
-                          <th scope="col" style="width: 55%">Product</th>
-                          <th scope="col" style="width: 15%">Unit Price</th>
-                          <th scope="col" style="width: 5%">Quantity</th>
-                          <th scope="col" style="width: 10%">Total</th>
+                          <th class="text-center" scope="col" style="width: 20%">Product</th>
+                          <th class="text-center" scope="col" style="width: 30%">Unit Price</th>
+                          <th class="text-center" scope="col" style="width: 20%">Quantity</th>
+                          <th class="text-center" scope="col" style="width: 30%">Total</th>
                         </tr>
                       </thead>
                       <tbody>
@@ -160,12 +232,12 @@
                           <td>
                             <a href="#" class="itemside">
                               <div class="left"><img src="./img/2.jpg" alt="" width="40" height="40"></div>
-                              <div class="info">GT-112 Portable wireless speaker, HIFI sound</div>
+                              <div class="info">GT-112 Portable wireless speaker</div>
                             </a>
                           </td>
                           <td class="text-center">฿ 199</td>
                           <td class="text-center">1</td>
-                          <td class="text-center">฿ 199</td>
+                          <td class="text-center" style="width: 30%">฿ 199</td>
                         </tr>
                         <tr>
                           <td colspan="4">
@@ -175,12 +247,8 @@
                                 <dd>฿ 199</dd>
                               </dl>
                               <dl class="dlist">
-                                <dt>Shipping cost:</dt>
-                                <dd class="font-weight-bold">฿ 35</dd>
-                              </dl>
-                              <dl class="dlist">
                                 <dt>Grand total:</dt>
-                                <dd class="font-weight-bold">฿ 234</dd>
+                                <dd class="font-weight-bold">฿ 199</dd>
                               </dl>
                               <dl class="dlist">
                                 <dt>Status:</dt>
@@ -200,15 +268,15 @@
                   <div class="card-body">
                     <div class="box shadow-sm bg-light">
                       <h5>Payment info</h5>
-                      <img src="./img/pay.jpg" alt="" width="200px" height="200%" class="payment mx-5">
+                      <img src="./img/pay.jpg" alt="" width="150px" height="150%" class="payment mx-2">
                     </div>
                   </div>
                 </div>
-
               </div>
             </div>
           </div>
         </div>
+
 
       </div>
     </div>
@@ -224,3 +292,34 @@
 <!-- include script -->
 <?php include"layouts/script.php"?>
 <!-- end include script -->
+
+
+<script>
+$(document).ready(function() {
+  $('#basic-datatables').DataTable({});
+
+  $('#multi-filter-select').DataTable({
+    "pageLength": 5,
+    initComplete: function() {
+      this.api().columns().every(function() {
+        var column = this;
+        var select = $('<select class="form-control"><option value=""></option></select>')
+          .appendTo($(column.footer()).empty())
+          .on('change', function() {
+            var val = $.fn.dataTable.util.escapeRegex(
+              $(this).val()
+            );
+
+            column
+              .search(val ? '^' + val + '$' : '', true, false)
+              .draw();
+          });
+
+        column.data().unique().sort().each(function(d, j) {
+          select.append('<option value="' + d + '">' + d + '</option>')
+        });
+      });
+    }
+  });
+});
+</script>
