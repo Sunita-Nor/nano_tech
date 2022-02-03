@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 25, 2022 at 11:17 AM
+-- Generation Time: Feb 03, 2022 at 01:53 PM
 -- Server version: 10.4.21-MariaDB
 -- PHP Version: 7.4.23
 
@@ -119,7 +119,9 @@ CREATE TABLE `productmaster` (
 --
 
 INSERT INTO `productmaster` (`pm_id`, `pt_id`, `pm_name`, `pm_price`, `pm_certification`, `pm_mateial`, `pm_detail`) VALUES
-(1, 121, 'qqq', 159, 'ce', 'Plastic', 'dddddd');
+(1, 121, 'GT-112 Portable wireless speaker, HIFI sound', 159, 'ce', 'Plastic', 'dddddd'),
+(2, 121, 'GT-111 Portable wireless speaker, HIFI sound', 258, 'CE', 'SSSS', 'EWEWDSSSDDSD'),
+(3, 122, 'เหี้ยตู่', 1, 'asda', 'asdasdasd', 'asdasd');
 
 -- --------------------------------------------------------
 
@@ -134,6 +136,18 @@ CREATE TABLE `product_detail` (
   `pd_number` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Dumping data for table `product_detail`
+--
+
+INSERT INTO `product_detail` (`pd_id`, `pm_id`, `pd_color`, `pd_number`) VALUES
+(1, 1, '#1B1D1D', '5'),
+(2, 1, '#2F3B8F', '5'),
+(3, 1, '#D71414', '10'),
+(4, 2, '#00BFFF', '5'),
+(5, 2, '#FF00EA', '10'),
+(6, 3, '#ffff', '10');
+
 -- --------------------------------------------------------
 
 --
@@ -145,6 +159,20 @@ CREATE TABLE `product_img` (
   `pm_id` int(11) NOT NULL,
   `img_name` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `product_img`
+--
+
+INSERT INTO `product_img` (`img_id`, `pm_id`, `img_name`) VALUES
+(2, 1, 'upload/1.jpg'),
+(3, 1, 'upload/2.jpg'),
+(4, 1, 'upload/3.jpg'),
+(5, 1, 'upload/4.jpg'),
+(6, 1, 'upload/5.jpg'),
+(7, 2, 'upload/GT.jpg'),
+(8, 2, 'upload/GT1.jpg'),
+(9, 3, 'upload/11.jpg');
 
 -- --------------------------------------------------------
 
@@ -162,7 +190,6 @@ CREATE TABLE `product_type` (
 --
 
 INSERT INTO `product_type` (`pt_id`, `pt_name`) VALUES
-(120, 'Imagine Dragons1'),
 (121, 'The Weekend'),
 (122, 'asd');
 
@@ -243,25 +270,25 @@ ALTER TABLE `member_address`
 -- AUTO_INCREMENT for table `productmaster`
 --
 ALTER TABLE `productmaster`
-  MODIFY `pm_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `pm_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `product_detail`
 --
 ALTER TABLE `product_detail`
-  MODIFY `pd_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `pd_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `product_img`
 --
 ALTER TABLE `product_img`
-  MODIFY `img_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `img_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `product_type`
 --
 ALTER TABLE `product_type`
-  MODIFY `pt_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=125;
+  MODIFY `pt_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=126;
 
 --
 -- Constraints for dumped tables

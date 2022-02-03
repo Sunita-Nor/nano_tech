@@ -44,6 +44,13 @@ require_once 'includes/database.php';
       </div>
     </div>
 
+    <?php 
+    $sql = "SELECT * FROM productmaster LEFT JOIN product_detail ON product_detail.pm_id = productmaster.pm_id LEFT JOIN product_img ON product_img.pm_id = productmaster.pm_id";
+    $stmt = $pdo->prepare($sql);
+    $stmt->execute();
+      while($result = $stmt->fetch(PDO::FETCH_ASSOC)){
+    ?>
+
     <div class="block">
       <div class="container">
         <div class="product product--layout--standard" data-layout="standard">
@@ -54,19 +61,19 @@ require_once 'includes/database.php';
               <div class="product-gallery">
                 <div class="product-gallery__featured">
                   <div class="owl-carousel" id="product-image">
-                    <a href="images/products/product-16.html" target="_blank">
-                      <img src="images/products/product-16.jpg" alt="">
+                    <a href="#" target="_blank">
+                      <img class="img-fluid" src="../admin/<?php echo $result["img_name"]; ?>" alt="">
                     </a>
-                    <a href="images/products/product-16-1.html" target="_blank">
+                    <a href="#" target="_blank">
                       <img src="images/products/product-16-1.jpg" alt="">
                     </a>
-                    <a href="images/products/product-16-2.html" target="_blank">
+                    <a href="#" target="_blank">
                       <img src="images/products/product-16-2.jpg" alt="">
                     </a>
-                    <a href="images/products/product-16-3.html" target="_blank">
+                    <a href="#" target="_blank">
                       <img src="images/products/product-16-3.jpg" alt="">
                     </a>
-                    <a href="images/products/product-16-4.html" target="_blank">
+                    <a href="#" target="_blank">
                       <img src="images/products/product-16-4.jpg" alt="">
                     </a>
                   </div>
@@ -74,20 +81,19 @@ require_once 'includes/database.php';
                 <div class="product-gallery__carousel">
                   <div class="owl-carousel" id="product-carousel">
                     <a href="#" class="product-gallery__carousel-item">
-                      <img class="product-gallery__carousel-image" src="images/products/product-16.jpg" alt="">
-                    </a>
-                    <a href="#" class="product-gallery__carousel-item">
-                      <img class="product-gallery__carousel-image" src="images/products/product-16-1.jpg" alt="">
-                    </a>
-                    <a href="#" class="product-gallery__carousel-item">
-                      <img class="product-gallery__carousel-image" src="images/products/product-16-2.jpg" alt="">
-                    </a>
-                    <a href="#" class="product-gallery__carousel-item">
-                      <img class="product-gallery__carousel-image" src="images/products/product-16-3.jpg" alt="">
-                    </a>
-                    <a href="#" class="product-gallery__carousel-item">
-                      <img class="product-gallery__carousel-image" src="images/products/product-16-4.jpg" alt="">
-                    </a>
+                      <img class="img-fluid" src="../admin/<?php echo $result["img_name"]; ?>" alt="">
+                      <a href="#" class="product-gallery__carousel-item">
+                        <img class="product-gallery__carousel-image" src="images/products/product-16-1.jpg" alt="">
+                      </a>
+                      <a href="#" class="product-gallery__carousel-item">
+                        <img class="product-gallery__carousel-image" src="images/products/product-16-2.jpg" alt="">
+                      </a>
+                      <a href="#" class="product-gallery__carousel-item">
+                        <img class="product-gallery__carousel-image" src="images/products/product-16-3.jpg" alt="">
+                      </a>
+                      <a href="#" class="product-gallery__carousel-item">
+                        <img class="product-gallery__carousel-image" src="images/products/product-16-4.jpg" alt="">
+                      </a>
                   </div>
                 </div>
               </div>
@@ -121,7 +127,7 @@ require_once 'includes/database.php';
 
             <!-- .product__sidebar -->
             <div class="product__sidebar">
-              <div class="product__prices">฿ 1,499.00</div>
+              <div class="product__prices">฿ <?php echo $result["pm_price"];?></div>
               <!-- .product__options -->
               <form class="product__options">
                 <div class="form-group product__option">
@@ -224,6 +230,9 @@ require_once 'includes/database.php';
 
       </div>
     </div>
+
+    <?php } ?>
+
   </div>
   <!-- site__body / end -->
 
