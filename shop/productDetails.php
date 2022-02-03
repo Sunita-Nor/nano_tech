@@ -224,10 +224,10 @@ require_once 'includes/database.php';
 
       </div>
     </div>
+  </div>
+  <!-- site__body / end -->
 
-    <!-- site__body / end -->
-
-    <!-- site__footer -->
-    <?php include"layouts/footer.php"?>
-    <!-- site__footer / end -->
-    <!-- site / end -->
+  <!-- site__footer -->
+  <?php include"layouts/footer.php"?>
+  <!-- site__footer / end -->
+  <!-- site / end -->

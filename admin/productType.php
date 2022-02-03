@@ -19,20 +19,10 @@
       <div class="sidebar-content">
         <ul class="nav nav-primary">
           <li class="nav-item">
-            <a data-toggle="collapse" href="#dashboard" class="collapsed" aria-expanded="false">
+            <a href="indexAdmin.php">
               <i class="fas fa-home"></i>
               <p>Dashboard</p>
-              <span class="caret"></span>
             </a>
-            <div class="collapse" id="dashboard">
-              <ul class="nav nav-collapse">
-                <li>
-                  <a href="indexAdmin.php">
-                    <span class="sub-item">Dashboard 1</span>
-                  </a>
-                </li>
-              </ul>
-            </div>
           </li>
           <li class="nav-section">
             <span class="sidebar-mini-icon">
