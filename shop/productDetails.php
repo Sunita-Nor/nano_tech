@@ -49,6 +49,7 @@ require_once 'includes/database.php';
         <div class="product product--layout--standard" data-layout="standard">
           <div class="product__content">
             <!-- .product__gallery -->
+
             <div class="product__gallery">
               <div class="product-gallery">
                 <div class="product-gallery__featured">
@@ -92,6 +93,7 @@ require_once 'includes/database.php';
               </div>
             </div>
             <!-- .product__gallery / end -->
+
             <!-- .product__info -->
             <div class="product__info">
               <div class="product__wishlist-compare">
@@ -114,14 +116,11 @@ require_once 'includes/database.php';
                 ornare, mi in ornare elementum, libero nibh lacinia urna, quis convallis lorem erat at purus. Maecenas
                 eu varius nisi.
               </div>
-              <ul class="product__meta">
-                <!-- <li class="product__meta-availability">Availability: <span class="text-success">In Stock</span></li> -->
-              </ul>
             </div>
             <!-- .product__info / end -->
+
             <!-- .product__sidebar -->
             <div class="product__sidebar">
-              <!-- <div class="product__availability">Availability: <span class="text-success">In Stock</span></div> -->
               <div class="product__prices">฿ 1,499.00</div>
               <!-- .product__options -->
               <form class="product__options">
@@ -150,7 +149,6 @@ require_once 'includes/database.php';
                     </div>
                   </div>
                 </div>
-
                 <div class="form-group product__option">
                   <label class="product__option-label" for="product-quantity">Quantity</label>
                   <div class="product__actions">
@@ -162,20 +160,17 @@ require_once 'includes/database.php';
                         <div class="input-number__sub"></div>
                       </div>
                     </div>
-                    <div class="product__actions-item product__actions-item--addtocart">
-                      <!-- <button class="btn btn-primary btn-lg">Add to cart</button> -->
-                      <a href="cart.php" class="btn btn-primary btn-lg">Add to cart</a>
-                    </div>
-                    <!-- <div class="product__actions-item product__actions-item--wishlist">
-                      <button type="button" class="btn btn-secondary btn-svg-icon btn-lg" data-toggle="tooltip"
-                        title="Wishlist">
-                        <svg width="16px" height="16px">
-                          <use xlink:href="images/sprite.svg#wishlist-16"></use>
-                        </svg>
-                      </button>
-                    </div> -->
                   </div>
-                </div>
+                  <div class="form-group product__option mt-2">
+                    <div class="product__actions">
+                      <div class="product__actions-item product__actions-item--addtocart">
+                        <a href="cart.php" class="btn btn-primary btn-lg">Add to cart</a>
+                      </div>
+                      <div class="product__actions-item product__actions-item--addtocart">
+                        <a href="cart.php" class="btn btn-primary btn-lg">Buy</a>
+                      </div>
+                    </div>
+                  </div>
               </form>
               <!-- .product__options / end -->
             </div>
@@ -226,6 +221,7 @@ require_once 'includes/database.php';
             </div>
           </div>
         </div>
+
       </div>
     </div>
 
