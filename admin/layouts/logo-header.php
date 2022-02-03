@@ -1,7 +1,7 @@
 <!-- Logo Header -->
 <div class="logo-header" data-background-color="white">
   <a href="indexAdmin.php" class="logo">
-    <img src="img/logo2.png" alt="navbar brand" class="navbar-brand" width="" height="">
+    <img src="img/logo-admin.png" alt="navbar brand" class="navbar-brand" width="" height="">
   </a>
   <button class="navbar-toggler sidenav-toggler ml-auto" type="button" data-toggle="collapse" data-target="collapse"
     aria-expanded="false" aria-label="Toggle navigation">
