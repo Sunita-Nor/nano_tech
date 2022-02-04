@@ -2,10 +2,10 @@
 -- version 5.1.1
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Generation Time: Feb 03, 2022 at 02:00 PM
--- Server version: 10.4.21-MariaDB
--- PHP Version: 7.4.23
+-- Host: localhost
+-- Generation Time: Feb 04, 2022 at 10:32 AM
+-- Server version: 10.4.19-MariaDB
+-- PHP Version: 7.4.20
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -110,7 +110,7 @@ CREATE TABLE `productmaster` (
   `pm_name` varchar(100) NOT NULL,
   `pm_price` int(11) NOT NULL,
   `pm_certification` varchar(100) NOT NULL,
-  `pm_mateial` varchar(100) NOT NULL,
+  `pm_material` varchar(100) NOT NULL,
   `pm_detail` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -118,8 +118,8 @@ CREATE TABLE `productmaster` (
 -- Dumping data for table `productmaster`
 --
 
-INSERT INTO `productmaster` (`pm_id`, `pt_id`, `pm_name`, `pm_price`, `pm_certification`, `pm_mateial`, `pm_detail`) VALUES
-(1, 121, 'GT-112 Portable wireless speaker, HIFI sound', 159, 'ce', 'Plastic', 'dddddd'),
+INSERT INTO `productmaster` (`pm_id`, `pt_id`, `pm_name`, `pm_price`, `pm_certification`, `pm_material`, `pm_detail`) VALUES
+(1, 121, 'GT-112 Portable wireless speaker, HIFI sound', 1599, 'ce', 'Plastic', 'dddddd'),
 (2, 121, 'GT-111 Portable wireless speaker, HIFI sound', 258, 'CE', 'SSSS', 'EWEWDSSSDDSD'),
 (3, 122, 'เหี้ยตู่', 1, 'asda', 'asdasdasd', 'asdasd');
 
@@ -141,7 +141,7 @@ CREATE TABLE `product_detail` (
 --
 
 INSERT INTO `product_detail` (`pd_id`, `pm_id`, `pd_color`, `pd_number`) VALUES
-(1, 1, '#1B1D1D', '5'),
+(1, 1, '#1B1D1D', '0'),
 (2, 1, '#2F3B8F', '5'),
 (3, 1, '#D71414', '10'),
 (4, 2, '#00BFFF', '5'),

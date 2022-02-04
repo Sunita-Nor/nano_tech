@@ -1,20 +1,20 @@
-<?php 
-include"layouts/head.php";
+<?php
+include "layouts/head.php";
 require_once 'includes/database.php';
 ?>
 
 <!-- mobilemenu -->
-<?php include"layouts/mobileMenu.php"?>
+<?php include "layouts/mobileMenu.php"?>
 <!-- mobilemenu / end -->
 
 <!-- site -->
 <div class="site">
   <!-- mobile site__header -->
-  <?php include"layouts/mobileNavbar.php"?>
+  <?php include "layouts/mobileNavbar.php"?>
   <!-- mobile site__header / end -->
 
   <!-- desktop site__header -->
-  <?php include"layouts/navbar.php"?>
+  <?php include "layouts/navbar.php"?>
   <!-- desktop site__header / end -->
 
   <!-- site__body -->
@@ -361,13 +361,13 @@ require_once 'includes/database.php';
               </div>
               <div class="products-view__list products-list" data-layout="grid-3-sidebar" data-with-features="false">
                 <div class="products-list__body">
-                  <?php 
-                    $sql = "SELECT * FROM productmaster LEFT JOIN product_img ON productmaster.pm_id = product_img.pm_id 
+                  <?php
+$sql = "SELECT * FROM productmaster LEFT JOIN product_img ON productmaster.pm_id = product_img.pm_id
                             GROUP BY productmaster.pm_id ORDER BY productmaster.pm_id DESC LIMIT 5";
-                    $stmt = $pdo->prepare($sql);
-                    $stmt->execute();
-                      while($result = $stmt->fetch(PDO::FETCH_ASSOC)){
-                  ?>
+$stmt = $pdo->prepare($sql);
+$stmt->execute();
+while ($result = $stmt->fetch(PDO::FETCH_ASSOC)) {
+    ?>
                   <!-- Product End-->
                   <div class="products-list__item">
                     <div class="product-card">
@@ -378,11 +378,11 @@ require_once 'includes/database.php';
                       </div>
                       <div class="product-card__info">
                         <div class="product-card__name">
-                          <a href="productDetails.php"><?php echo $result["pm_name"];?></a>
+                          <a href="productDetails.php?pm_id=<?=$result['pm_id']?>"><?php echo $result["pm_name"]; ?></a>
                         </div>
                       </div>
                       <div class="product-card__actions">
-                        <div class="product-card__prices">฿ <?php echo $result["pm_price"];?></div>
+                        <div class="product-card__prices">฿ <?php echo $result["pm_price"]; ?></div>
                         <div class="product-card__buttons">
                           <button class="btn btn-primary product-card__addtocart" type="button">Add To Cart</button>
                         </div>
@@ -390,7 +390,7 @@ require_once 'includes/database.php';
                     </div>
                   </div>
                   <!-- Product End-->
-                  <?php } ?>
+                  <?php }?>
                 </div>
               </div>
 
@@ -433,5 +433,5 @@ require_once 'includes/database.php';
   <!-- site__body / end -->
 
   <!-- site__footer -->
-  <?php include"layouts/footer.php"?>
+  <?php include "layouts/footer.php"?>
   <!-- site__footer / end -->
