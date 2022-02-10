@@ -81,6 +81,15 @@ code {
     font-family: 'Bai Jamjuree', sans-serif;
 }
 
+img {
+    max-width: 100%;
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+
 input[type=radio] {
     -ms-transform: scale(1.5);
     /* IE 9 */
@@ -696,7 +705,7 @@ input[type=radio] {
 .block-header__group--active:focus,
 .block-header__group--active:hover {
     cursor: default;
-    box-shadow: inset 0 0 0 2px #ffd333
+    box-shadow: inset 0 0 0 2px #87CEFA
 }
 
 .block-header__arrow,

@@ -16,9 +16,6 @@
                 <div class="block-slideshow__slide-text">Listen whenever you want.
                   <br>Don't worry about rain and splashing.
                 </div>
-                <div class="block-slideshow__slide-button">
-                  <span class="btn btn-primary btn-lg">Shop Now</span>
-                </div>
               </div>
             </a>
 
@@ -34,9 +31,6 @@
                 <div class="block-slideshow__slide-text">two-ear talk, true stereo, long-lasting Powerful compatibility
                   <br>comfortable wearing intelligent touch control, automatic matching
                 </div>
-                <div class="block-slideshow__slide-button">
-                  <span class="btn btn-primary btn-lg">Shop Now</span>
-                </div>
               </div>
             </a>
 
@@ -51,9 +45,9 @@
                 <div class="block-slideshow__slide-title">Micro Quick <br>Charge USB-C Fast</div>
                 <div class="block-slideshow__slide-text">Automatic Adsorption Design Simple Operation,<br>
                   Say <strong>No</strong> to Traditional Type.</div>
-                <div class="block-slideshow__slide-button">
+                <!-- <div class="block-slideshow__slide-button">
                   <span class="btn btn-primary btn-lg">Shop Now</span>
-                </div>
+                </div> -->
               </div>
             </a>
           </div>

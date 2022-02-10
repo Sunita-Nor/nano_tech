@@ -64,12 +64,12 @@
                  Praesent pellentesque volutpat ex, vitae auctor lorem pulvinar mollis felis at lacinia.
                </div>
 
-               <form action="#" class="footer-newsletter__form">
+               <!-- <form action="#" class="footer-newsletter__form">
                  <label class="sr-only" for="footer-newsletter-address">Email Address</label>
                  <input type="text" class="footer-newsletter__form-input form-control" id="footer-newsletter-address"
                    placeholder="Email Address...">
                  <button class="footer-newsletter__form-button btn btn-primary">Subscribe</button>
-               </form>
+               </form> -->
                <div class="footer-newsletter__text footer-newsletter__text--social">Follow us on social networks</div>
                <ul class="footer-newsletter__social-links">
                  <li class="footer-newsletter__social-link footer-newsletter__social-link--facebook">
