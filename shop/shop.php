@@ -24,7 +24,7 @@ require_once 'includes/database.php';
         <div class="page-header__breadcrumb">
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
-              <li class="breadcrumb-item"><a href="home1.php">Home</a>
+              <li class="breadcrumb-item"><a href="index.php">Home</a>
                 <svg class="breadcrumb-arrow" width="6px" height="9px">
                   <use xlink:href="images/sprite.svg#arrow-rounded-right-6x9"></use>
                 </svg>

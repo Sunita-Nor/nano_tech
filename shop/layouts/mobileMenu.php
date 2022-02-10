@@ -14,7 +14,7 @@
         data-collapse-opened-class="mobile-links__item--open">
         <li class="mobile-links__item" data-collapse-item>
           <div class="mobile-links__item-title">
-            <a href="home1.php" class="mobile-links__item-link">Home</a>
+            <a href="index.php" class="mobile-links__item-link">Home</a>
           </div>
         </li>
 
