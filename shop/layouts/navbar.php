@@ -135,18 +135,18 @@
                 <div class="indicator__dropdown">
                   <!-- .dropcart -->
                   <?php
-if (isset($_SESSION['carts'])) {
-		$sum = 0;
-    foreach ($_SESSION['carts'] as $key => $row) {
-			$price = (int) $row['pm_price'] * (int) $row['quantity'];
-			$sum += $price;
-        ?>
+                    if (isset($_SESSION['carts'])) {
+                        $sum = 0;
+                        foreach ($_SESSION['carts'] as $key => $row) {
+                          $price = (int) $row['pm_price'] * (int) $row['quantity'];
+                          $sum += $price;
+                  ?>
                   <div class="dropcart">
                     <div class="dropcart__products-list">
                       <div class="dropcart__product">
                         <div class="dropcart__product-image">
-                          <a href="productDetails.php?pm_id=<?=$row['pm_id']?>"><img
-                              src="../admin/<?=$row['img_name']?>" alt="">
+                          <a href="productDetails.php?pm_id=<?=$row['pm_id']?>">
+                            <img src="../admin/<?=$row['img_name']?>" alt="">
                           </a>
                         </div>
                         <div class="dropcart__product-info">

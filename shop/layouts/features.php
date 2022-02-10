@@ -7,7 +7,7 @@
           </svg></div>
         <div class="block-features__content">
           <div class="block-features__title">Free Shipping</div>
-          <div class="block-features__subtitle">Free delivery all over Thailand</div>
+          <div class="block-features__subtitle">For orders from ฿1,000</div>
         </div>
       </div>
       <div class="block-features__divider"></div>

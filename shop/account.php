@@ -41,9 +41,8 @@
           <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12">
             <div class="card h-100">
               <div class="card-body">
-                <div class="profile-pic-wrapper">
+                <!-- <div class="profile-pic-wrapper">
                   <div class="pic-holder">
-                    <!-- uploaded pic shown here -->
                     <div class="user-avatar">
                       <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="Maxwell Admin" id="profilePic"
                         class="pic">
@@ -64,14 +63,13 @@
 
                   </div>
                   <h5 class="user-name">Sunita</h5>
-                </div>
+                </div> -->
 
                 <div class="my-4">
                   <h6><i class="fas fa-user" style="color: DeepSkyBlue"></i> &nbsp; My Account</h6>
                   <ul class="my-2">
                     <a href="#" style="color: #87CEFA;">Personal Details</a>
-                    <a href="addressAccunt.php">Address Details</a>
-                    <a href="changePassword.php">Change Password</a>
+                    <a href="addressAccunt.php">Manage Address</a>
                   </ul>
                 </div>
                 <div class="my-4">
@@ -87,65 +85,29 @@
           <div class="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-12">
             <div class="card h-100">
               <div class="card-body">
-                <h5 class="mb-3">Personal Details</h5>
+                <div class="d-flex align-items-center">
+                  <h5>Personal Details</h5>
+                </div>
                 <hr>
-                <form class="my-4" action="">
-                  <div class="form-group row">
-                    <label class="col-sm-2 col-form-label">Username</label>
-                    <div class="col-sm-10">
-                      <input type="text" class="form-control-plaintext" id="" placeholder="Sunita">
-                    </div>
-                  </div>
-                  <div class="form-group row">
-                    <label class="col-sm-2 col-form-label">Full Name</label>
-                    <div class="col">
-                      <input type="text" class="form-control-plaintext" placeholder="First name">
-                    </div>
-                    <div class="col">
-                      <input type="text" class="form-control-plaintext" placeholder="Last name">
-                    </div>
-                  </div>
-                  <div class="form-group row">
-                    <label class="col-sm-2 col-form-label">Email</label>
-                    <div class="col-sm-10">
-                      <input type="text" class="form-control-plaintext" id="" value="email@example.com">
-                    </div>
-                  </div>
-                  <div class="form-group row">
-                    <label class="col-sm-2 col-form-label">Phone</label>
-                    <div class="col-sm-10">
-                      <input type="text" class="form-control-plaintext" id="" placeholder="Phone">
-                    </div>
-                  </div>
-                  <div class="form-group row">
-                    <label class="col-sm-2 col-form-label">Gender</label>
-                    <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
-                        value="option1">
-                      <label class="form-check-label" for="inlineRadio1"> &nbsp; Male
-                        <i class="fas fa-mars fa-lg" style="color: LightSkyBlue;"></i>
-                      </label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
-                        value="option2">
-                      <label class="form-check-label" for="inlineRadio2"> &nbsp; Female
-                        <i class="fas fa-venus fa-lg" style="color: LightPink;"></i>
-                      </label>
-                    </div>
-                  </div>
-                  <div class="form-group row">
-                    <label class="col-sm-2 col-form-label">Birth Day</label>
-                    <div class="col-sm-10">
-                      <input type="date" class="form-control-plaintext" id="" placeholder="Phone">
-                    </div>
-                  </div>
+                <div>
+                  <div class="d-flex align-items-center">
+                    <dl class="row">
+                      <dt class="col-sm-3 font-weight-light">Username :</dt>
+                      <dd class="col-sm-9">A
 
-                  <div class="text-right">
-                    <button type="button" id="submit" name="submit" class="btn btn-secondary">Cancel</button>
-                    <button type="button" id="submit" name="submit" class="btn btn-primary">Update</button>
+                      </dd>
+
+                      <dt class="col-sm-3 font-weight-light">Full Name:</dt>
+                      <dd class="col-sm-9">A B</dd>
+
+                      <dt class="col-sm-3 font-weight-light">Email:</dt>
+                      <dd class="col-sm-9">
+                        <p>asd@aasas.com</p>
+                      </dd>
+                    </dl>
                   </div>
-                </form>
+                </div>
+
               </div>
             </div>
           </div>

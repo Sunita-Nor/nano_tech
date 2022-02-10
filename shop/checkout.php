@@ -192,7 +192,7 @@
                   <tbody class="checkout__totals-subtotals">
                     <tr>
                       <th>Shipping</th>
-                      <td>35</td>
+                      <td>25</td>
                     </tr>
                   </tbody>
                   <tfoot class="checkout__totals-footer">

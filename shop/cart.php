@@ -128,6 +128,18 @@ include "layouts/head.php"?>
               <div class="card-body">
                 <h3 class="card-title">Cart Totals</h3>
                 <table class="cart__totals">
+                  <thead class="cart__totals-header">
+                    <tr>
+                      <th>Subtotal</th>
+                      <td>5,877</td>
+                    </tr>
+                  </thead>
+                  <tbody class="cart__totals-body">
+                    <tr>
+                      <th>Shipping</th>
+                      <td>25</td>
+                    </tr>
+                  </tbody>
                   <tfoot class="cart__totals-footer">
                     <tr>
                       <th>Total</th>

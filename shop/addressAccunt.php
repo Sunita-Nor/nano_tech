@@ -1,5 +1,11 @@
 <?php include"layouts/head.php"?>
 
+
+<style>
+
+
+</style>
+
 <!-- mobilemenu -->
 <?php include"layouts/mobileMenu.php"?>
 <!-- mobilemenu / end -->
@@ -41,9 +47,8 @@
           <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12">
             <div class="card h-100">
               <div class="card-body">
-                <div class="profile-pic-wrapper">
+                <!-- <div class="profile-pic-wrapper">
                   <div class="pic-holder">
-                    <!-- uploaded pic shown here -->
                     <div class="user-avatar">
                       <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="Maxwell Admin" id="profilePic"
                         class="pic">
@@ -64,14 +69,13 @@
 
                   </div>
                   <h5 class="user-name">Sunita</h5>
-                </div>
+                </div> -->
 
                 <div class="my-4">
                   <h6><i class="fas fa-user" style="color: DeepSkyBlue"></i> &nbsp; My Account</h6>
                   <ul class="my-2">
                     <a href="account.php">Personal Details</a>
-                    <a href="#" style="color: #87CEFA;">Address Details</a>
-                    <a href="changePassword.php">Change Password</a>
+                    <a href="#" style="color: #87CEFA;">Manage Address</a>
                   </ul>
                 </div>
                 <div class="my-4">
@@ -88,7 +92,7 @@
             <div class="card h-100">
               <div class="card-body">
                 <div class="d-flex align-items-center">
-                  <h5>Address Details</h5>
+                  <h5>Manage Address</h5>
                   <button class="btn btn-primary ml-auto" data-toggle="modal" data-target="#exampleModalCenter">
                     <i class="fas fa-plus" style="font-size: 10px;"></i>
                     New Address
@@ -139,29 +143,28 @@
                   </div>
                 </div>
                 <!-- Modal End-->
-                <div class="spec my-3">
-                  <div class="spec__section">
-                    <div class="spec__row">
-                      <div class="spec__name">
-                        <ul class="my-3"> Full Name</ul>
-                        <ul> Phone</ul>
-                        <ul> Address</ul>
-                      </div>
-                      <div class="spec__value">
-                        <ul class="my-3">Sunita Norkrueakam</ul>
-                        <ul>+66 23365988</ul>
-                        <ul> 100/18 หมู่.12 ต.ป่าแดด อ.เมือง จ.เชียงใหม่ 50100 </ul>
-                        <ul>
-                          <div class="form-button-action">
-                            <button class="btn btn-info btn-sm" data-toggle="modal" data-target="#exampleModalCenter"><i
-                                class="fa fa-edit"></i> Edit</button>
-                            <button class="btn btn-danger btn-sm mx-2"><i class="fa fa-times"></i> Remove</button>
-                          </div>
-                        </ul>
-                      </div>
-                    </div>
+                <hr>
+                <div>
+                  <div class="d-flex align-items-center">
+                    <h5>Address Details</h5>
+                    <button class="btn ml-auto"><i class="far fa-edit"></i> &nbsp;Edit</button> |
+                    <button class="btn"><i class="far fa-trash-alt"></i> &nbsp;Remove</button>
                   </div>
+
+                  <dl class="row mt-3">
+                    <dt class="col-sm-3 font-weight-light">Recipient Name:</dt>
+                    <dd class="col-sm-9">A</dd>
+
+                    <dt class="col-sm-3 font-weight-light">Telephone Number:</dt>
+                    <dd class="col-sm-9">097-2587923</dd>
+
+                    <dt class="col-sm-3 font-weight-light">Shipping Address:</dt>
+                    <dd class="col-sm-9">
+                      <p>100/18 , ป่าแดด เมืองเชียงใหม่ เชียงใหม่ 50100</p>
+                    </dd>
+                  </dl>
                 </div>
+
               </div>
             </div>
           </div>
