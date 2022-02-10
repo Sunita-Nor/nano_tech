@@ -4,23 +4,24 @@ require_once 'includes/function.php';
 
 $query = '';
 $output = array();
-$query = "SELECT * FROM product_type";
+$query = "SELECT * FROM product_type ";
 
 if(isset($_POST["search"]["value"])) {
-  // $query .= 'WHERE product_type LIKE "%'.$_POST["search"]["value"].'%" ';
-  $query .= ' WHERE pt_name LIKE "%'.$_POST["search"]["value"].'%" ';
-  // $query .= 'OR  LIKE "%'.$_POST["search"]["value"].'%" ';
+  $query .= 'WHERE pt_id LIKE "%'.$_POST["search"]["value"].'%" ';
+  $query .= 'OR pt_name LIKE "%'.$_POST["search"]["value"].'%" ';
 }
 
 if(isset($_POST["order"])) {
-  $query .= 'ORDER BY'.$_POST['order']['0']['column'].' '.$_POST['order']['0']['dir'].'';
-}else{
-  $query .= 'ORDER BY pt_name ASC';
+  $query .= ' ORDER BY '.$_POST['order']['0']['column'].' '.$_POST['order']['0']['dir'].' ';
+} else {
+  $query .= ' ORDER BY pt_id DESC';
 }
 
 if($_POST['length'] != -1) {
   $query .= ' LIMIT ' .$_POST['start'].','.$_POST['length'];
 }
+
+// echo $query;
 
 $statement = $pdo->prepare($query);
 $statement->execute();
@@ -31,7 +32,6 @@ $filtered_rows = $statement->rowCount();
 foreach($result as $row)
 {
   $sub_array = array();
-  
   $sub_array[] = $row["pt_name"];
   $sub_array[] = '<td>
                     <div class="form-button-action">

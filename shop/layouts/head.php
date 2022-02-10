@@ -58,3 +58,6 @@
     </div>
   </div>
   <!-- quickview-modal / end -->
+<?php
+session_start();
+?>

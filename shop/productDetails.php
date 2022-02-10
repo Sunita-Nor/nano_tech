@@ -44,9 +44,7 @@ require_once 'includes/database.php';
       </div>
     </div>
 
-<?php
-
-?>
+<form class="product__options" method="POST" action="addCart.php">
     <div class="block">
       <div class="container">
         <div class="product product--layout--standard" data-layout="standard">
@@ -76,6 +74,7 @@ $products = $stmt->fetchAll();
 foreach ($products as $key => $result) {
     ?>
                     <a href="#" class="product-gallery__carousel-item">
+						<input type="hidden" name="img_name" value="<?=$products[0]['img_name']?>"/>
                       <img class="img-fluid" src="../admin/<?php echo $result["img_name"]; ?>" alt="">
 </a>
 <?php }?>
@@ -112,7 +111,6 @@ foreach ($products as $key => $result) {
             <div class="product__sidebar">
               <div class="product__prices">฿ <?=number_format($products[0]['pm_price'])?></div>
               <!-- .product__options -->
-              <form class="product__options">
                 <div class="form-group product__option">
                   <label class="product__option-label">Color</label>
                   <div class="input-radio-color">
@@ -126,7 +124,7 @@ $colors = $stmt->fetchAll();
 <?php foreach ($colors as $key => $row) {?>
 						<label class="input-radio-color__item <?php if ($row['pd_number'] <= 0) {echo 'input-radio-color__item--disabled';}?>" style="color: <?=$row['pd_color']?>;"
                         	data-toggle="tooltip">
-                        <input type="radio" name="color" <?php if ($row['pd_number'] <= 0) {echo 'disabled';}?>>
+                        <input value="<?=$row['pd_color']?>" type="radio" name="color" <?php if ($row['pd_number'] <= 0) {echo 'disabled';}?> >
                         <span></span>
                       </label>
 <?php }?>
@@ -134,12 +132,16 @@ $colors = $stmt->fetchAll();
                   </div>
                 </div>
                 <div class="form-group product__option">
+					<input type="hidden" name="pm_id" value="<?=$row['pm_id']?>"/>
+					<input type="hidden" name="pm_name" value="<?=$row['pm_name']?>"/>
+					<input type="hidden" name="pm_price" value="<?=$row['pm_price']?>"/>
+					<input type="hidden" name="action" value="add"/>
                   <label class="product__option-label" for="product-quantity">Quantity</label>
                   <div class="product__actions">
                     <div class="product__actions-item">
                       <div class="input-number product__quantity">
                         <input id="product-quantity" class="input-number__input form-control form-control-lg"
-                          type="number" min="1" value="1">
+                          type="number" min="1" value="1" name="quantity">
                         <div class="input-number__add"></div>
                         <div class="input-number__sub"></div>
                       </div>
@@ -148,14 +150,13 @@ $colors = $stmt->fetchAll();
                   <div class="form-group product__option mt-2">
                     <div class="product__actions">
                       <div class="product__actions-item product__actions-item--addtocart">
-                        <a href="cart.php" class="btn btn-primary btn-lg">Add to cart</a>
+                        <input type="submit" class="btn btn-primary btn-lg" value="Add To Cart"/>
                       </div>
                       <div class="product__actions-item product__actions-item--addtocart">
                         <a href="cart.php" class="btn btn-primary btn-lg">Buy</a>
                       </div>
                     </div>
                   </div>
-              </form>
               <!-- .product__options / end -->
             </div>
             <!-- .product__end -->
@@ -209,6 +210,8 @@ $colors = $stmt->fetchAll();
       </div>
     </div>
   </div>
+  </form>
+
   <!-- site__body / end -->
 
   <!-- site__footer -->
