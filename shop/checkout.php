@@ -204,6 +204,8 @@
                 </table>
                 <button type="submit" class="btn btn-primary btn-xl btn-block"
                   onclick="document.location='./payment.php'">Payment Method</button>
+                <button type="submit" class="btn btn-primary btn-xl btn-block cart__checkout-button"
+                  onclick="document.location='./yourOrder.php'">Process the payment later</button>
               </div>
             </div>
           </div>
