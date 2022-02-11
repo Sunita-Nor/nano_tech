@@ -87,6 +87,8 @@
               <div class="card-body">
                 <div class="d-flex align-items-center">
                   <h5>Personal Details</h5>
+                  <!-- <button class="btn btn2 ml-auto"><i class="far fa-trash-alt"></i> &nbsp;Remove</button> |
+                  <button class="btn btn1"><i class="far fa-edit"></i> &nbsp;Edit</button> -->
                 </div>
                 <hr>
                 <div>
