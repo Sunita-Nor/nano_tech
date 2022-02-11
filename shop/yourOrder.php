@@ -5,7 +5,7 @@
   background-color: #48ABF7 !important;
 }
 
-.hg-success {
+.bg-success {
   background-color: #31CE36 !important;
 }
 
@@ -31,6 +31,69 @@
 
 .mr-3 {
   margin-right: 1rem !important;
+}
+
+a.itemside {
+  color: initial;
+  text-decoration: none;
+}
+
+.itemside {
+  position: relative;
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.itemside .left {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.itemside .info {
+  padding-left: 15px;
+  padding-right: 7px;
+}
+
+.text-muted {
+  color: #adb5bd !important;
+}
+
+.float-end {
+  float: right !important;
+}
+
+.dlist {
+  display: flex;
+}
+
+.dlist dt {
+  width: 150px;
+  font-weight: normal;
+}
+
+
+.dlist dd {
+  margin-left: 30px;
+  vertical-align: baseline;
+  flex-grow: 1;
+  margin-bottom: 0;
+  text-align: right;
+}
+
+[class*=dlist] {
+  margin-bottom: 5px;
+}
+
+dl {
+  margin-top: 0;
+}
+
+.box {
+  padding: 1rem;
+  border-radius: 0.25rem;
+  border: 1px solid rgba(108, 117, 125, 0.2);
+  background: #fff;
 }
 </style>
 <!-- mobilemenu -->
@@ -118,7 +181,61 @@
           <div class="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-12">
             <div class="card h-100">
               <div class="card-body">
-                <h5 class="mb-3">Your Order</h5>
+                <div class="d-flex align-items-center">
+                  <h5>Your Order</h5>
+                  <button class="btn btn-primary ml-auto" data-toggle="modal" data-target="#exampleModalCenter">
+                    <i class="fas fa-arrow-circle-up"></i>
+                    Upload Slip
+                  </button>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+                  aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title my-1" id="exampleModalCenterTitle">Upload Slip</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <form data-validation="true" action="#" method="post" enctype="multipart/form-data">
+                          <div class="file-upload mt-1">
+                            <div class="image-upload-wrap">
+                              <input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
+                              <div class="drag-text my-4">
+                                <i class="fas fa-file-upload"></i>
+                                <h5 class="my-1"><b>Choose Your Image to Upload</b></h5>
+                              </div>
+                            </div>
+                            <div class="file-upload-content">
+                              <img class="file-upload-image" src="#" alt="your image" />
+                              <div class="image-title-wrap">
+                                <button type="button" onclick="removeUpload()" class="remove-image">Remove</button>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="form-row mb-6 my-2">
+                            <div class="col-md-6 mb-3">
+                              <label for="validationCustom01">Full Name</label>
+                              <input type="text" class="form-control" id="validationCustom01" placeholder="Full Name"
+                                value="" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                              <label for="validationCustom02">วันที่ชำระเงิน</label>
+                              <input type="date" class="form-control" id="validationCustom02"
+                                placeholder="วันที่ชำระเงิน" required>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Modal End-->
+
+                <!-- <h5 class="mb-3">Your Order</h5> -->
                 <hr>
                 <div class="row">
                   <div class="col-sm-6 col-lg-4">
@@ -134,7 +251,7 @@
                       </div>
                     </div>
                   </div>
-                  <!-- <div class="col-sm-6 col-lg-4">
+                  <div class="col-sm-6 col-lg-4">
                     <div class="d-flex align-items-center">
                       <span class="stamp stamp-md bg-success mr-3">
                         <i class="fas fa-truck"></i>
@@ -143,11 +260,10 @@
                         <h5 class="mb-1"><b><a href="#">Order info</a></b></h5>
                         <small class="text-muted">Shipping: Fargo express</small><br>
                         <small class="text-muted">Pay method: SCB</small><br>
-                        <small class="text-muted" style="font-size: 15px;"><span
-                            class="badge rounded-pill alert-warning">Pending</span></small>
+                        <span class="badge rounded-pill alert-warning">Pending</span>
                       </div>
                     </div>
-                  </div> -->
+                  </div>
                   <div class="col-sm-6 col-lg-4">
                     <div class="d-flex align-items-center">
                       <span class="stamp stamp-md bg-warning mr-3">
@@ -163,16 +279,13 @@
                       </div>
                     </div>
                   </div>
-                </div>
-
-                <div class="row">
-                  <div class="col-md-8">
+                  <div class="col-md-12">
                     <div class="card-body">
                       <table class="table table-hover">
                         <thead>
                           <tr>
-                            <th class="text-center" scope="col" style="width: 20%">Product</th>
-                            <th class="text-center" scope="col" style="width: 50%">Unit Price</th>
+                            <th class="text-center" scope="col" style="width: 50%">Product</th>
+                            <th class="text-center" scope="col" style="width: 20%">Unit Price</th>
                             <th class="text-center" scope="col" style="width: 20%">Quantity</th>
                             <th class="text-center" scope="col" style="width: 30%">Total</th>
                           </tr>
@@ -196,10 +309,18 @@
                                   <dt>Subtotal:</dt>
                                   <dd>฿ 199</dd>
                                 </dl>
+                                <dl class="dlist mt-2">
+                                  <dt>Shipping cost:</dt>
+                                  <dd>฿ 25</dd>
+                                </dl>
+                                <dl class="dlist mt-2">
+                                  <dt>Grand total:</dt>
+                                  <dd>฿ 224</dd>
+                                </dl>
                                 <dl class="dlist">
-                                  <dt>Status:</dt>
+                                  <dt class="text-muted">Status:</dt>
                                   <dd class="font-weight-bold">
-                                    <span class="badge rounded-pill alert-success">Payment done</span>
+                                    <span class="badge rounded-pill alert-warning">Pending</span>
                                   </dd>
                                 </dl>
                               </article>
@@ -209,17 +330,7 @@
                       </table>
                     </div>
                   </div>
-
-                  <div class="col-md-4">
-                    <div class="card-body">
-                      <!-- <div class="box shadow-sm bg-light">
-                        <h5>Payment info</h5>
-                        <img src="./img/pay.jpg" alt="" width="150px" height="150%" class="payment mx-2">
-                      </div> -->
-                    </div>
-                  </div>
                 </div>
-
               </div>
             </div>
           </div>
@@ -228,8 +339,10 @@
     </div>
   </div>
 </div>
-
 <!-- site__body / end -->
+
+
+<script src="js/imgPayment.js"></script>
 <!-- site__footer -->
 <?php include"layouts/footer.php"?>
 <!-- site__footer / end -->

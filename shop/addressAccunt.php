@@ -2,8 +2,13 @@
 
 
 <style>
+.btn1:hover {
+  color: #00BFFF;
+}
 
-
+.btn2:hover {
+  color: #EA4d56;
+}
 </style>
 
 <!-- mobilemenu -->
@@ -94,7 +99,7 @@
                 <div class="d-flex align-items-center">
                   <h5>Manage Address</h5>
                   <button class="btn btn-primary ml-auto" data-toggle="modal" data-target="#exampleModalCenter">
-                    <i class="fas fa-plus" style="font-size: 10px;"></i>
+                    <i class="fas fa-plus-circle"></i>
                     New Address
                   </button>
                 </div>
@@ -147,8 +152,8 @@
                 <div>
                   <div class="d-flex align-items-center">
                     <h5>Address Details</h5>
-                    <button class="btn ml-auto"><i class="far fa-edit"></i> &nbsp;Edit</button> |
-                    <button class="btn"><i class="far fa-trash-alt"></i> &nbsp;Remove</button>
+                    <button class="btn btn2 ml-auto"><i class="far fa-trash-alt"></i> &nbsp;Remove</button> |
+                    <button class="btn btn1"><i class="far fa-edit"></i> &nbsp;Edit</button>
                   </div>
 
                   <dl class="row mt-3">
